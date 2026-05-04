@@ -1,0 +1,40 @@
+/* Testing and monitoring were performed after deploying the GCS-to-BigQuery trigger.
+The pipeline was tested end-to-end by uploading JSONL files to Google Cloud Storage and
+verifying that Cloud Functions automatically loaded the data into BigQuery.
+Data profiling was performed using BigQuery SQL to validate row counts, distinct product IDs,
+NULL values, duplicate product IDs, and schema consistency.
+Cloud Function logs were used to monitor execution and confirm successful load jobs. /*
+
+#Check raw data
+bq query --use_legacy_sql=false "
+SELECT
+  COUNT(*) AS total_rows,
+  COUNT(DISTINCT product_id) AS distinct_product_id,
+  COUNTIF(product_id IS NULL) AS null_product_id,
+  COUNTIF(product_name IS NULL) AS null_product_name
+FROM \`project-6978f7f5-636f-40bd-83c.glamira_dataset.raw_product\`
+
+
+
+# Check duplicate product
+bq query --use_legacy_sql=false "
+SELECT product_id, COUNT(*) AS cnt
+FROM \`project-6978f7f5-636f-40bd-83c.glamira_dataset.raw_product\`
+GROUP BY product_id
+HAVING cnt > 1
+ORDER BY cnt DESC
+LIMIT 20
+"
+
+#check schema
+bq query --use_legacy_sql=false "
+SELECT table_name, column_name, data_type, is_nullable
+FROM \`project-6978f7f5-636f-40bd-83c.glamira_dataset.INFORMATION_SCHEMA.COLUMNS\`
+ORDER BY table_name, ordinal_position
+"
+
+#check trigger
+gcloud functions logs read trigger_bigquery_load \
+  --gen2 \
+  --region us-central1 \
+  --limit 50
