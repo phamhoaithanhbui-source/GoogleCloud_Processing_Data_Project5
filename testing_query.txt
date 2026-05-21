@@ -5,36 +5,101 @@ Data profiling was performed using BigQuery SQL to validate row counts, distinct
 NULL values, duplicate product IDs, and schema consistency.
 Cloud Function logs were used to monitor execution and confirm successful load jobs. /*
 
-#Check raw data
+#Test nested fields
 bq query --use_legacy_sql=false "
 SELECT
-  COUNT(*) AS total_rows,
-  COUNT(DISTINCT product_id) AS distinct_product_id,
-  COUNTIF(product_id IS NULL) AS null_product_id,
-  COUNTIF(product_name IS NULL) AS null_product_name
-FROM \`project-6978f7f5-636f-40bd-83c.glamira_dataset.raw_product\`
-
-
-
-# Check duplicate product
-bq query --use_legacy_sql=false "
-SELECT product_id, COUNT(*) AS cnt
-FROM \`project-6978f7f5-636f-40bd-83c.glamira_dataset.raw_product\`
-GROUP BY product_id
-HAVING cnt > 1
-ORDER BY cnt DESC
-LIMIT 20
+    event_id
+    , opt.option_label
+    , opt.option_id
+    , opt.value_label
+    , opt.value_id
+FROM \`project-6978f7f5-636f-40bd-83c.glamira_dataset_raw.raw_event\`
+    , UNNEST(option) AS opt
+LIMIT 10
 "
-
-#check schema
+#Data Profiling — table names, columns, data types
 bq query --use_legacy_sql=false "
-SELECT table_name, column_name, data_type, is_nullable
-FROM \`project-6978f7f5-636f-40bd-83c.glamira_dataset.INFORMATION_SCHEMA.COLUMNS\`
-ORDER BY table_name, ordinal_position
+SELECT
+    table_name
+    , column_name
+    , data_type
+    , is_nullable
+FROM \`project-6978f7f5-636f-40bd-83c.glamira_dataset_raw.INFORMATION_SCHEMA.COLUMNS\`
+WHERE table_name IN (
+    'raw_event'
+    , 'raw_ip_location'
+    , 'raw_product'
+)
+ORDER BY
+    table_name
+    , ordinal_position
 "
+#Count NULL values + distinct values
+bq query --use_legacy_sql=false "
+SELECT
+    COUNT(*) AS total_rows
 
-#check trigger
-gcloud functions logs read trigger_bigquery_load \
-  --gen2 \
-  --region us-central1 \
-  --limit 50
+    , COUNTIF(event_id IS NULL) AS null_event_id
+    , COUNTIF(collection IS NULL) AS null_collection
+    , COUNTIF(time_stamp IS NULL) AS null_time_stamp
+    , COUNTIF(ip IS NULL) AS null_ip
+    , COUNTIF(user_id_db IS NULL) AS null_user_id_db
+    , COUNTIF(device_id IS NULL) AS null_device_id
+    , COUNTIF(store_id IS NULL) AS null_store_id
+    , COUNTIF(product_id IS NULL) AS null_product_id
+    , COUNTIF(order_id IS NULL) AS null_order_id
+
+    , COUNT(DISTINCT event_id) AS distinct_event_id
+    , COUNT(DISTINCT collection) AS distinct_collection
+    , COUNT(DISTINCT ip) AS distinct_ip
+    , COUNT(DISTINCT user_id_db) AS distinct_user_id_db
+    , COUNT(DISTINCT product_id) AS distinct_product_id
+    , COUNT(DISTINCT order_id) AS distinct_order_id
+FROM \`project-6978f7f5-636f-40bd-83c.glamira_dataset_raw.raw_event\`
+"
+# raw_ip_location profiling
+bq query --use_legacy_sql=false "
+SELECT
+    COUNT(*) AS total_rows
+
+    , COUNTIF(ip IS NULL) AS null_ip
+    , COUNTIF(country_code IS NULL) AS null_country_code
+    , COUNTIF(country_name IS NULL) AS null_country_name
+    , COUNTIF(region IS NULL) AS null_region
+    , COUNTIF(city IS NULL) AS null_city
+
+    , COUNT(DISTINCT ip) AS distinct_ip
+    , COUNT(DISTINCT country_code) AS distinct_country_code
+    , COUNT(DISTINCT country_name) AS distinct_country_name
+    , COUNT(DISTINCT region) AS distinct_region
+    , COUNT(DISTINCT city) AS distinct_city
+FROM \`project-6978f7f5-636f-40bd-83c.glamira_dataset_raw.raw_ip_location\`
+"
+#raw_product profiling
+bq query --use_legacy_sql=false "
+SELECT
+    COUNT(*) AS total_rows
+
+    , COUNTIF(product_id IS NULL) AS null_product_id
+    , COUNTIF(product_name IS NULL) AS null_product_name
+    , COUNTIF(url IS NULL) AS null_url
+    , COUNTIF(status_code IS NULL) AS null_status_code
+    , COUNTIF(status IS NULL) AS null_status
+
+    , COUNT(DISTINCT product_id) AS distinct_product_id
+    , COUNT(DISTINCT product_name) AS distinct_product_name
+    , COUNT(DISTINCT status_code) AS distinct_status_code
+    , COUNT(DISTINCT status) AS distinct_status
+FROM \`project-6978f7f5-636f-40bd-83c.glamira_dataset_raw.raw_product\`
+"
+#raw_event.ip  match raw_ip_location.ip
+bq query --use_legacy_sql=false "
+SELECT
+    COUNT(*) AS total_event_rows_with_ip
+    , COUNTIF(loc.ip IS NULL) AS unmatched_ip_rows
+    , COUNTIF(loc.ip IS NOT NULL) AS matched_ip_rows
+FROM \`project-6978f7f5-636f-40bd-83c.glamira_dataset_raw.raw_event\` AS event
+LEFT JOIN \`project-6978f7f5-636f-40bd-83c.glamira_dataset_raw.raw_ip_location\` AS loc
+    ON event.ip = loc.ip
+WHERE event.ip IS NOT NULL
+"
