@@ -1,0 +1,1374 @@
+nohup: ignoring input
+############################################
+ETL EXPORT TO GCS START
+Sample mode: False
+Upload enabled: True
+############################################
+========== EXPORT RAW DATA START ==========
+MongoDB URI: mongodb://localhost:27017/
+Database: countly
+Collection: summary
+Batch size: 10,000
+Chunk size: 500,000
+Sample limit: None
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000001.jsonl.gz
+Exported raw data rows: 100,000
+Exported raw data rows: 200,000
+Exported raw data rows: 300,000
+Exported raw data rows: 400,000
+Exported raw data rows: 500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000001.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000001.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000001.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000001.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000001.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000001.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000001.jsonl.gz
+  
+.....
+
+Average throughput: 109.1MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000001.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000001.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000002.jsonl.gz
+Exported raw data rows: 600,000
+Exported raw data rows: 700,000
+Exported raw data rows: 800,000
+Exported raw data rows: 900,000
+Exported raw data rows: 1,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000002.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000002.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000002.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000002.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000002.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000002.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000002.jsonl.gz
+  
+......
+
+Average throughput: 96.7MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000002.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000002.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000003.jsonl.gz
+Exported raw data rows: 1,100,000
+Exported raw data rows: 1,200,000
+Exported raw data rows: 1,300,000
+Exported raw data rows: 1,400,000
+Exported raw data rows: 1,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000003.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000003.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000003.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000003.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000003.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000003.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000003.jsonl.gz
+  
+.....
+
+Average throughput: 115.2MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000003.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000003.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000004.jsonl.gz
+Exported raw data rows: 1,600,000
+Exported raw data rows: 1,700,000
+Exported raw data rows: 1,800,000
+Exported raw data rows: 1,900,000
+Exported raw data rows: 2,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000004.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000004.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000004.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000004.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000004.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000004.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000004.jsonl.gz
+  
+......
+
+Average throughput: 99.9MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000004.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000004.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000005.jsonl.gz
+Exported raw data rows: 2,100,000
+Exported raw data rows: 2,200,000
+Exported raw data rows: 2,300,000
+Exported raw data rows: 2,400,000
+Exported raw data rows: 2,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000005.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000005.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000005.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000005.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000005.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000005.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000005.jsonl.gz
+  
+......
+
+Average throughput: 98.6MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000005.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000005.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000006.jsonl.gz
+Exported raw data rows: 2,600,000
+Exported raw data rows: 2,700,000
+Exported raw data rows: 2,800,000
+Exported raw data rows: 2,900,000
+Exported raw data rows: 3,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000006.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000006.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000006.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000006.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000006.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000006.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000006.jsonl.gz
+  
+.....
+
+Average throughput: 107.7MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000006.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000006.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000007.jsonl.gz
+Exported raw data rows: 3,100,000
+Exported raw data rows: 3,200,000
+Exported raw data rows: 3,300,000
+Exported raw data rows: 3,400,000
+Exported raw data rows: 3,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000007.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000007.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000007.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000007.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000007.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000007.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000007.jsonl.gz
+  
+.....
+
+Average throughput: 127.6MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000007.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000007.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000008.jsonl.gz
+Exported raw data rows: 3,600,000
+Exported raw data rows: 3,700,000
+Exported raw data rows: 3,800,000
+Exported raw data rows: 3,900,000
+Exported raw data rows: 4,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000008.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000008.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000008.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000008.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000008.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000008.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000008.jsonl.gz
+  
+.....
+
+Average throughput: 114.3MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000008.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000008.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000009.jsonl.gz
+Exported raw data rows: 4,100,000
+Exported raw data rows: 4,200,000
+Exported raw data rows: 4,300,000
+Exported raw data rows: 4,400,000
+Exported raw data rows: 4,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000009.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000009.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000009.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000009.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000009.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000009.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000009.jsonl.gz
+  
+.....
+
+Average throughput: 123.8MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000009.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000009.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000010.jsonl.gz
+Exported raw data rows: 4,600,000
+Exported raw data rows: 4,700,000
+Exported raw data rows: 4,800,000
+Exported raw data rows: 4,900,000
+Exported raw data rows: 5,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000010.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000010.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000010.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000010.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000010.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000010.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000010.jsonl.gz
+  
+.....
+
+Average throughput: 118.4MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000010.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000010.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000011.jsonl.gz
+Exported raw data rows: 5,100,000
+Exported raw data rows: 5,200,000
+Exported raw data rows: 5,300,000
+Exported raw data rows: 5,400,000
+Exported raw data rows: 5,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000011.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000011.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000011.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000011.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000011.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000011.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000011.jsonl.gz
+  
+.....
+
+Average throughput: 104.3MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000011.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000011.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000012.jsonl.gz
+Exported raw data rows: 5,600,000
+Exported raw data rows: 5,700,000
+Exported raw data rows: 5,800,000
+Exported raw data rows: 5,900,000
+Exported raw data rows: 6,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000012.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000012.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000012.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000012.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000012.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000012.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000012.jsonl.gz
+  
+......
+
+Average throughput: 98.4MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000012.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000012.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000013.jsonl.gz
+Exported raw data rows: 6,100,000
+Exported raw data rows: 6,200,000
+Exported raw data rows: 6,300,000
+Exported raw data rows: 6,400,000
+Exported raw data rows: 6,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000013.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000013.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000013.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000013.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000013.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000013.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000013.jsonl.gz
+  
+.....
+
+Average throughput: 110.4MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000013.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000013.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000014.jsonl.gz
+Exported raw data rows: 6,600,000
+Exported raw data rows: 6,700,000
+Exported raw data rows: 6,800,000
+Exported raw data rows: 6,900,000
+Exported raw data rows: 7,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000014.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000014.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000014.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000014.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000014.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000014.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000014.jsonl.gz
+  
+.....
+
+Average throughput: 113.5MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000014.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000014.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000015.jsonl.gz
+Exported raw data rows: 7,100,000
+Exported raw data rows: 7,200,000
+Exported raw data rows: 7,300,000
+Exported raw data rows: 7,400,000
+Exported raw data rows: 7,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000015.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000015.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000015.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000015.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000015.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000015.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000015.jsonl.gz
+  
+....
+
+Average throughput: 141.5MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000015.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000015.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000016.jsonl.gz
+Exported raw data rows: 7,600,000
+Exported raw data rows: 7,700,000
+Exported raw data rows: 7,800,000
+Exported raw data rows: 7,900,000
+Exported raw data rows: 8,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000016.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000016.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000016.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000016.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000016.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000016.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000016.jsonl.gz
+  
+......
+
+Average throughput: 103.3MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000016.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000016.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000017.jsonl.gz
+Exported raw data rows: 8,100,000
+Exported raw data rows: 8,200,000
+Exported raw data rows: 8,300,000
+Exported raw data rows: 8,400,000
+Exported raw data rows: 8,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000017.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000017.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000017.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000017.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000017.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000017.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000017.jsonl.gz
+  
+......
+
+Average throughput: 96.5MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000017.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000017.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000018.jsonl.gz
+Exported raw data rows: 8,600,000
+Exported raw data rows: 8,700,000
+Exported raw data rows: 8,800,000
+Exported raw data rows: 8,900,000
+Exported raw data rows: 9,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000018.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000018.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000018.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000018.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000018.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000018.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000018.jsonl.gz
+  
+......
+
+Average throughput: 103.6MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000018.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000018.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000019.jsonl.gz
+Exported raw data rows: 9,100,000
+Exported raw data rows: 9,200,000
+Exported raw data rows: 9,300,000
+Exported raw data rows: 9,400,000
+Exported raw data rows: 9,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000019.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000019.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000019.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000019.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000019.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000019.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000019.jsonl.gz
+  
+.....
+
+Average throughput: 110.7MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000019.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000019.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000020.jsonl.gz
+Exported raw data rows: 9,600,000
+Exported raw data rows: 9,700,000
+Exported raw data rows: 9,800,000
+Exported raw data rows: 9,900,000
+Exported raw data rows: 10,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000020.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000020.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000020.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000020.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000020.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000020.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000020.jsonl.gz
+  
+....
+
+Average throughput: 161.1MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000020.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000020.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000021.jsonl.gz
+Exported raw data rows: 10,100,000
+Exported raw data rows: 10,200,000
+Exported raw data rows: 10,300,000
+Exported raw data rows: 10,400,000
+Exported raw data rows: 10,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000021.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000021.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000021.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000021.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000021.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000021.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000021.jsonl.gz
+  
+......
+
+Average throughput: 102.2MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000021.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000021.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000022.jsonl.gz
+Exported raw data rows: 10,600,000
+Exported raw data rows: 10,700,000
+Exported raw data rows: 10,800,000
+Exported raw data rows: 10,900,000
+Exported raw data rows: 11,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000022.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000022.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000022.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000022.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000022.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000022.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000022.jsonl.gz
+  
+.....
+
+Average throughput: 111.7MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000022.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000022.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000023.jsonl.gz
+Exported raw data rows: 11,100,000
+Exported raw data rows: 11,200,000
+Exported raw data rows: 11,300,000
+Exported raw data rows: 11,400,000
+Exported raw data rows: 11,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000023.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000023.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000023.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000023.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000023.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000023.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000023.jsonl.gz
+  
+......
+
+Average throughput: 89.8MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000023.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000023.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000024.jsonl.gz
+Exported raw data rows: 11,600,000
+Exported raw data rows: 11,700,000
+Exported raw data rows: 11,800,000
+Exported raw data rows: 11,900,000
+Exported raw data rows: 12,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000024.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000024.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000024.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000024.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000024.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000024.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000024.jsonl.gz
+  
+......
+
+Average throughput: 100.4MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000024.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000024.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000025.jsonl.gz
+Exported raw data rows: 12,100,000
+Exported raw data rows: 12,200,000
+Exported raw data rows: 12,300,000
+Exported raw data rows: 12,400,000
+Exported raw data rows: 12,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000025.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000025.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000025.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000025.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000025.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000025.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000025.jsonl.gz
+  
+.....
+
+Average throughput: 106.8MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000025.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000025.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000026.jsonl.gz
+Exported raw data rows: 12,600,000
+Exported raw data rows: 12,700,000
+Exported raw data rows: 12,800,000
+Exported raw data rows: 12,900,000
+Exported raw data rows: 13,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000026.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000026.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000026.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000026.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000026.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000026.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000026.jsonl.gz
+  
+...
+
+Average throughput: 190.0MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000026.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000026.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000027.jsonl.gz
+Exported raw data rows: 13,100,000
+Exported raw data rows: 13,200,000
+Exported raw data rows: 13,300,000
+Exported raw data rows: 13,400,000
+Exported raw data rows: 13,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000027.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000027.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000027.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000027.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000027.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000027.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000027.jsonl.gz
+  
+......
+
+Average throughput: 85.1MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000027.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000027.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000028.jsonl.gz
+Exported raw data rows: 13,600,000
+Exported raw data rows: 13,700,000
+Exported raw data rows: 13,800,000
+Exported raw data rows: 13,900,000
+Exported raw data rows: 14,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000028.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000028.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000028.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000028.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000028.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000028.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000028.jsonl.gz
+  
+.....
+
+Average throughput: 114.4MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000028.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000028.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000029.jsonl.gz
+Exported raw data rows: 14,100,000
+Exported raw data rows: 14,200,000
+Exported raw data rows: 14,300,000
+Exported raw data rows: 14,400,000
+Exported raw data rows: 14,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000029.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000029.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000029.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000029.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000029.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000029.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000029.jsonl.gz
+  
+......
+
+Average throughput: 103.9MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000029.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000029.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000030.jsonl.gz
+Exported raw data rows: 14,600,000
+Exported raw data rows: 14,700,000
+Exported raw data rows: 14,800,000
+Exported raw data rows: 14,900,000
+Exported raw data rows: 15,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000030.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000030.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000030.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000030.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000030.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000030.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000030.jsonl.gz
+  
+.....
+
+Average throughput: 106.0MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000030.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000030.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000031.jsonl.gz
+Exported raw data rows: 15,100,000
+Exported raw data rows: 15,200,000
+Exported raw data rows: 15,300,000
+Exported raw data rows: 15,400,000
+Exported raw data rows: 15,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000031.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000031.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000031.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000031.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000031.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000031.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000031.jsonl.gz
+  
+.....
+
+Average throughput: 105.5MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000031.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000031.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000032.jsonl.gz
+Exported raw data rows: 15,600,000
+Exported raw data rows: 15,700,000
+Exported raw data rows: 15,800,000
+Exported raw data rows: 15,900,000
+Exported raw data rows: 16,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000032.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000032.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000032.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000032.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000032.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000032.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000032.jsonl.gz
+  
+......
+
+Average throughput: 94.6MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000032.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000032.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000033.jsonl.gz
+Exported raw data rows: 16,100,000
+Exported raw data rows: 16,200,000
+Exported raw data rows: 16,300,000
+Exported raw data rows: 16,400,000
+Exported raw data rows: 16,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000033.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000033.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000033.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000033.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000033.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000033.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000033.jsonl.gz
+  
+.....
+
+Average throughput: 104.4MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000033.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000033.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000034.jsonl.gz
+Exported raw data rows: 16,600,000
+Exported raw data rows: 16,700,000
+Exported raw data rows: 16,800,000
+Exported raw data rows: 16,900,000
+Exported raw data rows: 17,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000034.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000034.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000034.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000034.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000034.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000034.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000034.jsonl.gz
+  
+......
+
+Average throughput: 93.5MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000034.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000034.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000035.jsonl.gz
+Exported raw data rows: 17,100,000
+Exported raw data rows: 17,200,000
+Exported raw data rows: 17,300,000
+Exported raw data rows: 17,400,000
+Exported raw data rows: 17,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000035.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000035.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000035.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000035.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000035.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000035.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000035.jsonl.gz
+  
+.....
+
+Average throughput: 129.4MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000035.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000035.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000036.jsonl.gz
+Exported raw data rows: 17,600,000
+Exported raw data rows: 17,700,000
+Exported raw data rows: 17,800,000
+Exported raw data rows: 17,900,000
+Exported raw data rows: 18,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000036.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000036.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000036.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000036.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000036.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000036.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000036.jsonl.gz
+  
+......
+
+Average throughput: 97.6MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000036.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000036.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000037.jsonl.gz
+Exported raw data rows: 18,100,000
+Exported raw data rows: 18,200,000
+Exported raw data rows: 18,300,000
+Exported raw data rows: 18,400,000
+Exported raw data rows: 18,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000037.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000037.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000037.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000037.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000037.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000037.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000037.jsonl.gz
+  
+.....
+
+Average throughput: 116.0MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000037.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000037.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000038.jsonl.gz
+Exported raw data rows: 18,600,000
+Exported raw data rows: 18,700,000
+Exported raw data rows: 18,800,000
+Exported raw data rows: 18,900,000
+Exported raw data rows: 19,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000038.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000038.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000038.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000038.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000038.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000038.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000038.jsonl.gz
+  
+.....
+
+Average throughput: 110.0MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000038.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000038.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000039.jsonl.gz
+Exported raw data rows: 19,100,000
+Exported raw data rows: 19,200,000
+Exported raw data rows: 19,300,000
+Exported raw data rows: 19,400,000
+Exported raw data rows: 19,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000039.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000039.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000039.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000039.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000039.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000039.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000039.jsonl.gz
+  
+......
+
+Average throughput: 108.0MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000039.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000039.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000040.jsonl.gz
+Exported raw data rows: 19,600,000
+Exported raw data rows: 19,700,000
+Exported raw data rows: 19,800,000
+Exported raw data rows: 19,900,000
+Exported raw data rows: 20,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000040.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000040.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000040.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000040.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000040.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000040.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000040.jsonl.gz
+  
+......
+
+Average throughput: 86.2MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000040.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000040.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000041.jsonl.gz
+Exported raw data rows: 20,100,000
+Exported raw data rows: 20,200,000
+Exported raw data rows: 20,300,000
+Exported raw data rows: 20,400,000
+Exported raw data rows: 20,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000041.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000041.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000041.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000041.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000041.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000041.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000041.jsonl.gz
+  
+......
+
+Average throughput: 88.8MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000041.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000041.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000042.jsonl.gz
+Exported raw data rows: 20,600,000
+Exported raw data rows: 20,700,000
+Exported raw data rows: 20,800,000
+Exported raw data rows: 20,900,000
+Exported raw data rows: 21,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000042.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000042.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000042.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000042.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000042.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000042.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000042.jsonl.gz
+  
+.....
+
+Average throughput: 108.9MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000042.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000042.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000043.jsonl.gz
+Exported raw data rows: 21,100,000
+Exported raw data rows: 21,200,000
+Exported raw data rows: 21,300,000
+Exported raw data rows: 21,400,000
+Exported raw data rows: 21,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000043.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000043.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000043.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000043.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000043.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000043.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000043.jsonl.gz
+  
+......
+
+Average throughput: 97.1MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000043.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000043.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000044.jsonl.gz
+Exported raw data rows: 21,600,000
+Exported raw data rows: 21,700,000
+Exported raw data rows: 21,800,000
+Exported raw data rows: 21,900,000
+Exported raw data rows: 22,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000044.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000044.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000044.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000044.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000044.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000044.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000044.jsonl.gz
+  
+....
+
+Average throughput: 159.4MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000044.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000044.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000045.jsonl.gz
+Exported raw data rows: 22,100,000
+Exported raw data rows: 22,200,000
+Exported raw data rows: 22,300,000
+Exported raw data rows: 22,400,000
+Exported raw data rows: 22,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000045.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000045.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000045.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000045.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000045.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000045.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000045.jsonl.gz
+  
+.....
+
+Average throughput: 113.8MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000045.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000045.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000046.jsonl.gz
+Exported raw data rows: 22,600,000
+Exported raw data rows: 22,700,000
+Exported raw data rows: 22,800,000
+Exported raw data rows: 22,900,000
+Exported raw data rows: 23,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000046.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000046.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000046.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000046.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000046.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000046.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000046.jsonl.gz
+  
+......
+
+Average throughput: 99.3MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000046.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000046.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000047.jsonl.gz
+Exported raw data rows: 23,100,000
+Exported raw data rows: 23,200,000
+Exported raw data rows: 23,300,000
+Exported raw data rows: 23,400,000
+Exported raw data rows: 23,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000047.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000047.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000047.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000047.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000047.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000047.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000047.jsonl.gz
+  
+.....
+
+Average throughput: 107.8MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000047.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000047.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000048.jsonl.gz
+Exported raw data rows: 23,600,000
+Exported raw data rows: 23,700,000
+Exported raw data rows: 23,800,000
+Exported raw data rows: 23,900,000
+Exported raw data rows: 24,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000048.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000048.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000048.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000048.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000048.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000048.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000048.jsonl.gz
+  
+.....
+
+Average throughput: 106.2MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000048.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000048.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000049.jsonl.gz
+Exported raw data rows: 24,100,000
+Exported raw data rows: 24,200,000
+Exported raw data rows: 24,300,000
+Exported raw data rows: 24,400,000
+Exported raw data rows: 24,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000049.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000049.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000049.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000049.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000049.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000049.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000049.jsonl.gz
+  
+......
+
+Average throughput: 94.6MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000049.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000049.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000050.jsonl.gz
+Exported raw data rows: 24,600,000
+Exported raw data rows: 24,700,000
+Exported raw data rows: 24,800,000
+Exported raw data rows: 24,900,000
+Exported raw data rows: 25,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000050.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000050.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000050.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000050.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000050.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000050.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000050.jsonl.gz
+  
+.....
+
+Average throughput: 110.9MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000050.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000050.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000051.jsonl.gz
+Exported raw data rows: 25,100,000
+Exported raw data rows: 25,200,000
+Exported raw data rows: 25,300,000
+Exported raw data rows: 25,400,000
+Exported raw data rows: 25,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000051.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000051.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000051.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000051.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000051.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000051.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000051.jsonl.gz
+  
+......
+
+Average throughput: 91.2MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000051.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000051.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000052.jsonl.gz
+Exported raw data rows: 25,600,000
+Exported raw data rows: 25,700,000
+Exported raw data rows: 25,800,000
+Exported raw data rows: 25,900,000
+Exported raw data rows: 26,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000052.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000052.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000052.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000052.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000052.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000052.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000052.jsonl.gz
+  
+.....
+
+Average throughput: 120.1MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000052.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000052.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000053.jsonl.gz
+Exported raw data rows: 26,100,000
+Exported raw data rows: 26,200,000
+Exported raw data rows: 26,300,000
+Exported raw data rows: 26,400,000
+Exported raw data rows: 26,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000053.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000053.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000053.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000053.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000053.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000053.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000053.jsonl.gz
+  
+.....
+
+Average throughput: 108.0MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000053.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000053.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000054.jsonl.gz
+Exported raw data rows: 26,600,000
+Exported raw data rows: 26,700,000
+Exported raw data rows: 26,800,000
+Exported raw data rows: 26,900,000
+Exported raw data rows: 27,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000054.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000054.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000054.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000054.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000054.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000054.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000054.jsonl.gz
+  
+.....
+
+Average throughput: 124.0MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000054.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000054.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000055.jsonl.gz
+Exported raw data rows: 27,100,000
+Exported raw data rows: 27,200,000
+Exported raw data rows: 27,300,000
+Exported raw data rows: 27,400,000
+Exported raw data rows: 27,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000055.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000055.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000055.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000055.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000055.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000055.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000055.jsonl.gz
+  
+.....
+
+Average throughput: 124.6MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000055.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000055.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000056.jsonl.gz
+Exported raw data rows: 27,600,000
+Exported raw data rows: 27,700,000
+Exported raw data rows: 27,800,000
+Exported raw data rows: 27,900,000
+Exported raw data rows: 28,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000056.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000056.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000056.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000056.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000056.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000056.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000056.jsonl.gz
+  
+.....
+
+Average throughput: 118.8MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000056.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000056.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000057.jsonl.gz
+Exported raw data rows: 28,100,000
+Exported raw data rows: 28,200,000
+Exported raw data rows: 28,300,000
+Exported raw data rows: 28,400,000
+Exported raw data rows: 28,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000057.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000057.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000057.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000057.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000057.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000057.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000057.jsonl.gz
+  
+....
+
+Average throughput: 164.5MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000057.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000057.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000058.jsonl.gz
+Exported raw data rows: 28,600,000
+Exported raw data rows: 28,700,000
+Exported raw data rows: 28,800,000
+Exported raw data rows: 28,900,000
+Exported raw data rows: 29,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000058.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000058.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000058.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000058.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000058.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000058.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000058.jsonl.gz
+  
+...
+
+Average throughput: 184.1MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000058.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000058.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000059.jsonl.gz
+Exported raw data rows: 29,100,000
+Exported raw data rows: 29,200,000
+Exported raw data rows: 29,300,000
+Exported raw data rows: 29,400,000
+Exported raw data rows: 29,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000059.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000059.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000059.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000059.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000059.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000059.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000059.jsonl.gz
+  
+....
+
+Average throughput: 146.5MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000059.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000059.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000060.jsonl.gz
+Exported raw data rows: 29,600,000
+Exported raw data rows: 29,700,000
+Exported raw data rows: 29,800,000
+Exported raw data rows: 29,900,000
+Exported raw data rows: 30,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000060.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000060.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000060.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000060.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000060.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000060.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000060.jsonl.gz
+  
+.....
+
+Average throughput: 120.1MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000060.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000060.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000061.jsonl.gz
+Exported raw data rows: 30,100,000
+Exported raw data rows: 30,200,000
+Exported raw data rows: 30,300,000
+Exported raw data rows: 30,400,000
+Exported raw data rows: 30,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000061.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000061.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000061.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000061.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000061.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000061.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000061.jsonl.gz
+  
+......
+
+Average throughput: 97.8MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000061.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000061.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000062.jsonl.gz
+Exported raw data rows: 30,600,000
+Exported raw data rows: 30,700,000
+Exported raw data rows: 30,800,000
+Exported raw data rows: 30,900,000
+Exported raw data rows: 31,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000062.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000062.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000062.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000062.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000062.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000062.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000062.jsonl.gz
+  
+.....
+
+Average throughput: 107.2MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000062.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000062.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000063.jsonl.gz
+Exported raw data rows: 31,100,000
+Exported raw data rows: 31,200,000
+Exported raw data rows: 31,300,000
+Exported raw data rows: 31,400,000
+Exported raw data rows: 31,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000063.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000063.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000063.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000063.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000063.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000063.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000063.jsonl.gz
+  
+....
+
+Average throughput: 130.8MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000063.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000063.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000064.jsonl.gz
+Exported raw data rows: 31,600,000
+Exported raw data rows: 31,700,000
+Exported raw data rows: 31,800,000
+Exported raw data rows: 31,900,000
+Exported raw data rows: 32,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000064.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000064.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000064.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000064.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000064.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000064.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000064.jsonl.gz
+  
+.....
+
+Average throughput: 128.2MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000064.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000064.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000065.jsonl.gz
+Exported raw data rows: 32,100,000
+Exported raw data rows: 32,200,000
+Exported raw data rows: 32,300,000
+Exported raw data rows: 32,400,000
+Exported raw data rows: 32,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000065.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000065.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000065.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000065.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000065.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000065.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000065.jsonl.gz
+  
+.....
+
+Average throughput: 111.0MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000065.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000065.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000066.jsonl.gz
+Exported raw data rows: 32,600,000
+Exported raw data rows: 32,700,000
+Exported raw data rows: 32,800,000
+Exported raw data rows: 32,900,000
+Exported raw data rows: 33,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000066.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000066.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000066.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000066.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000066.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000066.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000066.jsonl.gz
+  
+.....
+
+Average throughput: 101.5MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000066.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000066.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000067.jsonl.gz
+Exported raw data rows: 33,100,000
+Exported raw data rows: 33,200,000
+Exported raw data rows: 33,300,000
+Exported raw data rows: 33,400,000
+Exported raw data rows: 33,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000067.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000067.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000067.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000067.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000067.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000067.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000067.jsonl.gz
+  
+....
+
+Average throughput: 134.6MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000067.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000067.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000068.jsonl.gz
+Exported raw data rows: 33,600,000
+Exported raw data rows: 33,700,000
+Exported raw data rows: 33,800,000
+Exported raw data rows: 33,900,000
+Exported raw data rows: 34,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000068.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000068.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000068.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000068.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000068.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000068.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000068.jsonl.gz
+  
+.....
+
+Average throughput: 122.4MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000068.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000068.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000069.jsonl.gz
+Exported raw data rows: 34,100,000
+Exported raw data rows: 34,200,000
+Exported raw data rows: 34,300,000
+Exported raw data rows: 34,400,000
+Exported raw data rows: 34,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000069.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000069.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000069.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000069.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000069.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000069.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000069.jsonl.gz
+  
+......
+
+Average throughput: 86.5MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000069.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000069.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000070.jsonl.gz
+Exported raw data rows: 34,600,000
+Exported raw data rows: 34,700,000
+Exported raw data rows: 34,800,000
+Exported raw data rows: 34,900,000
+Exported raw data rows: 35,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000070.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000070.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000070.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000070.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000070.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000070.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000070.jsonl.gz
+  
+.....
+
+Average throughput: 118.0MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000070.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000070.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000071.jsonl.gz
+Exported raw data rows: 35,100,000
+Exported raw data rows: 35,200,000
+Exported raw data rows: 35,300,000
+Exported raw data rows: 35,400,000
+Exported raw data rows: 35,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000071.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000071.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000071.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000071.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000071.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000071.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000071.jsonl.gz
+  
+.....
+
+Average throughput: 119.3MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000071.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000071.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000072.jsonl.gz
+Exported raw data rows: 35,600,000
+Exported raw data rows: 35,700,000
+Exported raw data rows: 35,800,000
+Exported raw data rows: 35,900,000
+Exported raw data rows: 36,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000072.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000072.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000072.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000072.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000072.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000072.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000072.jsonl.gz
+  
+.....
+
+Average throughput: 112.5MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000072.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000072.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000073.jsonl.gz
+Exported raw data rows: 36,100,000
+Exported raw data rows: 36,200,000
+Exported raw data rows: 36,300,000
+Exported raw data rows: 36,400,000
+Exported raw data rows: 36,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000073.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000073.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000073.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000073.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000073.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000073.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000073.jsonl.gz
+  
+.....
+
+Average throughput: 102.0MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000073.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000073.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000074.jsonl.gz
+Exported raw data rows: 36,600,000
+Exported raw data rows: 36,700,000
+Exported raw data rows: 36,800,000
+Exported raw data rows: 36,900,000
+Exported raw data rows: 37,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000074.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000074.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000074.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000074.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000074.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000074.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000074.jsonl.gz
+  
+.....
+
+Average throughput: 102.4MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000074.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000074.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000075.jsonl.gz
+Exported raw data rows: 37,100,000
+Exported raw data rows: 37,200,000
+Exported raw data rows: 37,300,000
+Exported raw data rows: 37,400,000
+Exported raw data rows: 37,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000075.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000075.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000075.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000075.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000075.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000075.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000075.jsonl.gz
+  
+.......
+
+Average throughput: 83.5MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000075.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000075.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000076.jsonl.gz
+Exported raw data rows: 37,600,000
+Exported raw data rows: 37,700,000
+Exported raw data rows: 37,800,000
+Exported raw data rows: 37,900,000
+Exported raw data rows: 38,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000076.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000076.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000076.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000076.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000076.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000076.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000076.jsonl.gz
+  
+.....
+
+Average throughput: 124.3MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000076.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000076.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000077.jsonl.gz
+Exported raw data rows: 38,100,000
+Exported raw data rows: 38,200,000
+Exported raw data rows: 38,300,000
+Exported raw data rows: 38,400,000
+Exported raw data rows: 38,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000077.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000077.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000077.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000077.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000077.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000077.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000077.jsonl.gz
+  
+...
+
+Average throughput: 183.8MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000077.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000077.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000078.jsonl.gz
+Exported raw data rows: 38,600,000
+Exported raw data rows: 38,700,000
+Exported raw data rows: 38,800,000
+Exported raw data rows: 38,900,000
+Exported raw data rows: 39,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000078.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000078.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000078.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000078.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000078.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000078.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000078.jsonl.gz
+  
+......
+
+Average throughput: 89.3MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000078.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000078.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000079.jsonl.gz
+Exported raw data rows: 39,100,000
+Exported raw data rows: 39,200,000
+Exported raw data rows: 39,300,000
+Exported raw data rows: 39,400,000
+Exported raw data rows: 39,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000079.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000079.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000079.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000079.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000079.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000079.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000079.jsonl.gz
+  
+.....
+
+Average throughput: 103.6MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000079.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000079.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000080.jsonl.gz
+Exported raw data rows: 39,600,000
+Exported raw data rows: 39,700,000
+Exported raw data rows: 39,800,000
+Exported raw data rows: 39,900,000
+Exported raw data rows: 40,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000080.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000080.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000080.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000080.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000080.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000080.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000080.jsonl.gz
+  
+......
+
+Average throughput: 87.1MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000080.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000080.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000081.jsonl.gz
+Exported raw data rows: 40,100,000
+Exported raw data rows: 40,200,000
+Exported raw data rows: 40,300,000
+Exported raw data rows: 40,400,000
+Exported raw data rows: 40,500,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000081.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000081.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000081.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000081.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000081.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000081.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000081.jsonl.gz
+  
+......
+
+Average throughput: 82.9MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000081.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000081.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000082.jsonl.gz
+Exported raw data rows: 40,600,000
+Exported raw data rows: 40,700,000
+Exported raw data rows: 40,800,000
+Exported raw data rows: 40,900,000
+Exported raw data rows: 41,000,000
+Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000082.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000082.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000082.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000082.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000082.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000082.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000082.jsonl.gz
+  
+.....
+
+Average throughput: 101.0MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000082.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000082.jsonl.gz
+Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000083.jsonl.gz
+Exported raw data rows: 41,100,000
+Exported raw data rows: 41,200,000
+Exported raw data rows: 41,300,000
+Exported raw data rows: 41,400,000
+Finished final chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000083.jsonl.gz
+Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000083.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000083.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000083.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000083.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000083.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000083.jsonl.gz
+  
+....
+
+Average throughput: 110.2MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000083.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000083.jsonl.gz
+========== EXPORT RAW DATA DONE ==========
+Total raw data rows exported: 41,432,473
+Total chunks created: 83
+========== EXPORT IP2LOCATION START ==========
+Compressing JSONL: /home/buiphamhoaithanh/ip_pipeline/ip_location.jsonl -> /home/buiphamhoaithanh/ETL/data/ip_location/ip_location.jsonl.gz
+Compressed file completed: /home/buiphamhoaithanh/ETL/data/ip_location/ip_location.jsonl.gz
+Valid rows: 3,239,627, bad rows: 0
+Uploading /home/buiphamhoaithanh/ETL/data/ip_location/ip_location.jsonl.gz -> gs://glamira-project-dataset/raw/ip_location/ip_location.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/ip_location/ip_location.jsonl.gz gs://glamira-project-dataset/raw/ip_location/ip_location.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/ip_location/ip_location.jsonl.gz to gs://glamira-project-dataset/raw/ip_location/ip_location.jsonl.gz
+  
+..
+
+Average throughput: 83.7MiB/s
+Uploaded successfully: gs://glamira-project-dataset/raw/ip_location/ip_location.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/ip_location/ip_location.jsonl.gz
+========== EXPORT IP2LOCATION DONE ==========
+Total IP rows exported: 3,239,627
+========== EXPORT PRODUCT START ==========
+Compressing JSONL: /home/buiphamhoaithanh/crawl_output/product_id_success.jsonl -> /home/buiphamhoaithanh/ETL/data/products/product_id_success.jsonl.gz
+Compressed file completed: /home/buiphamhoaithanh/ETL/data/products/product_id_success.jsonl.gz
+Valid rows: 18,969, bad rows: 0
+Uploading /home/buiphamhoaithanh/ETL/data/products/product_id_success.jsonl.gz -> gs://glamira-project-dataset/raw/product/product_id_success.jsonl.gz
+Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/products/product_id_success.jsonl.gz gs://glamira-project-dataset/raw/product/product_id_success.jsonl.gz
+STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/products/product_id_success.jsonl.gz to gs://glamira-project-dataset/raw/product/product_id_success.jsonl.gz
+  
+.
+Uploaded successfully: gs://glamira-project-dataset/raw/product/product_id_success.jsonl.gz
+Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/products/product_id_success.jsonl.gz
+========== EXPORT PRODUCT DONE ==========
+Total product rows exported: 18,969
+############################################
+ETL EXPORT TO GCS COMPLETED SUCCESSFULLY
+############################################

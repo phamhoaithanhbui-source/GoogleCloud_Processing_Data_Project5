@@ -1,0 +1,1373 @@
+2026-05-21 03:35:53,706 - INFO - ############################################
+2026-05-21 03:35:53,707 - INFO - ETL EXPORT TO GCS START
+2026-05-21 03:35:53,707 - INFO - Sample mode: False
+2026-05-21 03:35:53,707 - INFO - Upload enabled: True
+2026-05-21 03:35:53,707 - INFO - ############################################
+2026-05-21 03:35:53,707 - INFO - ========== EXPORT RAW DATA START ==========
+2026-05-21 03:35:53,707 - INFO - MongoDB URI: mongodb://localhost:27017/
+2026-05-21 03:35:53,707 - INFO - Database: countly
+2026-05-21 03:35:53,707 - INFO - Collection: summary
+2026-05-21 03:35:53,707 - INFO - Batch size: 10,000
+2026-05-21 03:35:53,707 - INFO - Chunk size: 500,000
+2026-05-21 03:35:53,707 - INFO - Sample limit: None
+2026-05-21 03:35:53,827 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000001.jsonl.gz
+2026-05-21 03:36:11,497 - INFO - Exported raw data rows: 100,000
+2026-05-21 03:36:28,651 - INFO - Exported raw data rows: 200,000
+2026-05-21 03:36:46,402 - INFO - Exported raw data rows: 300,000
+2026-05-21 03:37:04,767 - INFO - Exported raw data rows: 400,000
+2026-05-21 03:37:23,580 - INFO - Exported raw data rows: 500,000
+2026-05-21 03:37:23,847 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000001.jsonl.gz
+2026-05-21 03:37:23,847 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000001.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000001.jsonl.gz
+2026-05-21 03:37:23,847 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000001.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000001.jsonl.gz
+2026-05-21 03:37:28,849 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000001.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000001.jsonl.gz
+  
+.....
+
+Average throughput: 109.1MiB/s
+2026-05-21 03:37:28,850 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000001.jsonl.gz
+2026-05-21 03:37:28,871 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000001.jsonl.gz
+2026-05-21 03:37:28,871 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000002.jsonl.gz
+2026-05-21 03:37:46,920 - INFO - Exported raw data rows: 600,000
+2026-05-21 03:38:04,778 - INFO - Exported raw data rows: 700,000
+2026-05-21 03:38:23,186 - INFO - Exported raw data rows: 800,000
+2026-05-21 03:38:41,019 - INFO - Exported raw data rows: 900,000
+2026-05-21 03:38:58,794 - INFO - Exported raw data rows: 1,000,000
+2026-05-21 03:38:58,931 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000002.jsonl.gz
+2026-05-21 03:38:58,931 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000002.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000002.jsonl.gz
+2026-05-21 03:38:58,931 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000002.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000002.jsonl.gz
+2026-05-21 03:39:01,966 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000002.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000002.jsonl.gz
+  
+......
+
+Average throughput: 96.7MiB/s
+2026-05-21 03:39:01,966 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000002.jsonl.gz
+2026-05-21 03:39:01,989 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000002.jsonl.gz
+2026-05-21 03:39:01,989 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000003.jsonl.gz
+2026-05-21 03:39:20,097 - INFO - Exported raw data rows: 1,100,000
+2026-05-21 03:39:38,341 - INFO - Exported raw data rows: 1,200,000
+2026-05-21 03:39:56,420 - INFO - Exported raw data rows: 1,300,000
+2026-05-21 03:40:14,279 - INFO - Exported raw data rows: 1,400,000
+2026-05-21 03:40:32,775 - INFO - Exported raw data rows: 1,500,000
+2026-05-21 03:40:32,899 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000003.jsonl.gz
+2026-05-21 03:40:32,899 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000003.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000003.jsonl.gz
+2026-05-21 03:40:32,899 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000003.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000003.jsonl.gz
+2026-05-21 03:40:35,739 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000003.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000003.jsonl.gz
+  
+.....
+
+Average throughput: 115.2MiB/s
+2026-05-21 03:40:35,739 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000003.jsonl.gz
+2026-05-21 03:40:35,761 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000003.jsonl.gz
+2026-05-21 03:40:35,761 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000004.jsonl.gz
+2026-05-21 03:40:53,400 - INFO - Exported raw data rows: 1,600,000
+2026-05-21 03:41:10,908 - INFO - Exported raw data rows: 1,700,000
+2026-05-21 03:41:28,714 - INFO - Exported raw data rows: 1,800,000
+2026-05-21 03:41:46,738 - INFO - Exported raw data rows: 1,900,000
+2026-05-21 03:42:05,020 - INFO - Exported raw data rows: 2,000,000
+2026-05-21 03:42:05,184 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000004.jsonl.gz
+2026-05-21 03:42:05,184 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000004.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000004.jsonl.gz
+2026-05-21 03:42:05,184 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000004.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000004.jsonl.gz
+2026-05-21 03:42:08,218 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000004.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000004.jsonl.gz
+  
+......
+
+Average throughput: 99.9MiB/s
+2026-05-21 03:42:08,218 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000004.jsonl.gz
+2026-05-21 03:42:08,241 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000004.jsonl.gz
+2026-05-21 03:42:08,241 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000005.jsonl.gz
+2026-05-21 03:42:26,032 - INFO - Exported raw data rows: 2,100,000
+2026-05-21 03:42:43,705 - INFO - Exported raw data rows: 2,200,000
+2026-05-21 03:43:02,219 - INFO - Exported raw data rows: 2,300,000
+2026-05-21 03:43:19,802 - INFO - Exported raw data rows: 2,400,000
+2026-05-21 03:43:38,329 - INFO - Exported raw data rows: 2,500,000
+2026-05-21 03:43:38,615 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000005.jsonl.gz
+2026-05-21 03:43:38,615 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000005.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000005.jsonl.gz
+2026-05-21 03:43:38,615 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000005.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000005.jsonl.gz
+2026-05-21 03:43:41,727 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000005.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000005.jsonl.gz
+  
+......
+
+Average throughput: 98.6MiB/s
+2026-05-21 03:43:41,728 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000005.jsonl.gz
+2026-05-21 03:43:41,749 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000005.jsonl.gz
+2026-05-21 03:43:41,749 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000006.jsonl.gz
+2026-05-21 03:43:59,910 - INFO - Exported raw data rows: 2,600,000
+2026-05-21 03:44:18,245 - INFO - Exported raw data rows: 2,700,000
+2026-05-21 03:44:36,548 - INFO - Exported raw data rows: 2,800,000
+2026-05-21 03:44:54,918 - INFO - Exported raw data rows: 2,900,000
+2026-05-21 03:45:13,005 - INFO - Exported raw data rows: 3,000,000
+2026-05-21 03:45:13,145 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000006.jsonl.gz
+2026-05-21 03:45:13,146 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000006.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000006.jsonl.gz
+2026-05-21 03:45:13,146 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000006.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000006.jsonl.gz
+2026-05-21 03:45:15,963 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000006.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000006.jsonl.gz
+  
+.....
+
+Average throughput: 107.7MiB/s
+2026-05-21 03:45:15,965 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000006.jsonl.gz
+2026-05-21 03:45:15,989 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000006.jsonl.gz
+2026-05-21 03:45:15,990 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000007.jsonl.gz
+2026-05-21 03:45:33,713 - INFO - Exported raw data rows: 3,100,000
+2026-05-21 03:45:52,338 - INFO - Exported raw data rows: 3,200,000
+2026-05-21 03:46:10,677 - INFO - Exported raw data rows: 3,300,000
+2026-05-21 03:46:28,863 - INFO - Exported raw data rows: 3,400,000
+2026-05-21 03:46:47,355 - INFO - Exported raw data rows: 3,500,000
+2026-05-21 03:46:47,571 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000007.jsonl.gz
+2026-05-21 03:46:47,571 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000007.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000007.jsonl.gz
+2026-05-21 03:46:47,571 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000007.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000007.jsonl.gz
+2026-05-21 03:46:50,427 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000007.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000007.jsonl.gz
+  
+.....
+
+Average throughput: 127.6MiB/s
+2026-05-21 03:46:50,428 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000007.jsonl.gz
+2026-05-21 03:46:50,448 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000007.jsonl.gz
+2026-05-21 03:46:50,449 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000008.jsonl.gz
+2026-05-21 03:47:08,354 - INFO - Exported raw data rows: 3,600,000
+2026-05-21 03:47:26,144 - INFO - Exported raw data rows: 3,700,000
+2026-05-21 03:47:43,580 - INFO - Exported raw data rows: 3,800,000
+2026-05-21 03:48:01,334 - INFO - Exported raw data rows: 3,900,000
+2026-05-21 03:48:20,337 - INFO - Exported raw data rows: 4,000,000
+2026-05-21 03:48:20,597 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000008.jsonl.gz
+2026-05-21 03:48:20,598 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000008.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000008.jsonl.gz
+2026-05-21 03:48:20,598 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000008.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000008.jsonl.gz
+2026-05-21 03:48:23,454 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000008.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000008.jsonl.gz
+  
+.....
+
+Average throughput: 114.3MiB/s
+2026-05-21 03:48:23,454 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000008.jsonl.gz
+2026-05-21 03:48:23,475 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000008.jsonl.gz
+2026-05-21 03:48:23,476 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000009.jsonl.gz
+2026-05-21 03:48:41,834 - INFO - Exported raw data rows: 4,100,000
+2026-05-21 03:48:59,703 - INFO - Exported raw data rows: 4,200,000
+2026-05-21 03:49:17,893 - INFO - Exported raw data rows: 4,300,000
+2026-05-21 03:49:36,139 - INFO - Exported raw data rows: 4,400,000
+2026-05-21 03:49:53,808 - INFO - Exported raw data rows: 4,500,000
+2026-05-21 03:49:53,918 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000009.jsonl.gz
+2026-05-21 03:49:53,918 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000009.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000009.jsonl.gz
+2026-05-21 03:49:53,918 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000009.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000009.jsonl.gz
+2026-05-21 03:49:56,652 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000009.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000009.jsonl.gz
+  
+.....
+
+Average throughput: 123.8MiB/s
+2026-05-21 03:49:56,652 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000009.jsonl.gz
+2026-05-21 03:49:56,676 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000009.jsonl.gz
+2026-05-21 03:49:56,676 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000010.jsonl.gz
+2026-05-21 03:50:14,729 - INFO - Exported raw data rows: 4,600,000
+2026-05-21 03:50:33,245 - INFO - Exported raw data rows: 4,700,000
+2026-05-21 03:50:51,502 - INFO - Exported raw data rows: 4,800,000
+2026-05-21 03:51:09,834 - INFO - Exported raw data rows: 4,900,000
+2026-05-21 03:51:28,357 - INFO - Exported raw data rows: 5,000,000
+2026-05-21 03:51:28,517 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000010.jsonl.gz
+2026-05-21 03:51:28,517 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000010.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000010.jsonl.gz
+2026-05-21 03:51:28,517 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000010.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000010.jsonl.gz
+2026-05-21 03:51:31,416 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000010.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000010.jsonl.gz
+  
+.....
+
+Average throughput: 118.4MiB/s
+2026-05-21 03:51:31,417 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000010.jsonl.gz
+2026-05-21 03:51:31,442 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000010.jsonl.gz
+2026-05-21 03:51:31,442 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000011.jsonl.gz
+2026-05-21 03:51:49,702 - INFO - Exported raw data rows: 5,100,000
+2026-05-21 03:52:07,668 - INFO - Exported raw data rows: 5,200,000
+2026-05-21 03:52:26,221 - INFO - Exported raw data rows: 5,300,000
+2026-05-21 03:52:44,934 - INFO - Exported raw data rows: 5,400,000
+2026-05-21 03:53:03,530 - INFO - Exported raw data rows: 5,500,000
+2026-05-21 03:53:03,759 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000011.jsonl.gz
+2026-05-21 03:53:03,759 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000011.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000011.jsonl.gz
+2026-05-21 03:53:03,759 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000011.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000011.jsonl.gz
+2026-05-21 03:53:06,696 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000011.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000011.jsonl.gz
+  
+.....
+
+Average throughput: 104.3MiB/s
+2026-05-21 03:53:06,696 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000011.jsonl.gz
+2026-05-21 03:53:06,717 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000011.jsonl.gz
+2026-05-21 03:53:06,718 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000012.jsonl.gz
+2026-05-21 03:53:25,169 - INFO - Exported raw data rows: 5,600,000
+2026-05-21 03:53:43,650 - INFO - Exported raw data rows: 5,700,000
+2026-05-21 03:54:02,096 - INFO - Exported raw data rows: 5,800,000
+2026-05-21 03:54:20,079 - INFO - Exported raw data rows: 5,900,000
+2026-05-21 03:54:38,793 - INFO - Exported raw data rows: 6,000,000
+2026-05-21 03:54:38,905 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000012.jsonl.gz
+2026-05-21 03:54:38,905 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000012.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000012.jsonl.gz
+2026-05-21 03:54:38,905 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000012.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000012.jsonl.gz
+2026-05-21 03:54:42,032 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000012.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000012.jsonl.gz
+  
+......
+
+Average throughput: 98.4MiB/s
+2026-05-21 03:54:42,032 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000012.jsonl.gz
+2026-05-21 03:54:42,052 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000012.jsonl.gz
+2026-05-21 03:54:42,052 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000013.jsonl.gz
+2026-05-21 03:55:00,325 - INFO - Exported raw data rows: 6,100,000
+2026-05-21 03:55:18,715 - INFO - Exported raw data rows: 6,200,000
+2026-05-21 03:55:36,954 - INFO - Exported raw data rows: 6,300,000
+2026-05-21 03:55:56,322 - INFO - Exported raw data rows: 6,400,000
+2026-05-21 03:56:14,642 - INFO - Exported raw data rows: 6,500,000
+2026-05-21 03:56:14,833 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000013.jsonl.gz
+2026-05-21 03:56:14,834 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000013.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000013.jsonl.gz
+2026-05-21 03:56:14,834 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000013.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000013.jsonl.gz
+2026-05-21 03:56:17,735 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000013.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000013.jsonl.gz
+  
+.....
+
+Average throughput: 110.4MiB/s
+2026-05-21 03:56:17,735 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000013.jsonl.gz
+2026-05-21 03:56:17,756 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000013.jsonl.gz
+2026-05-21 03:56:17,757 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000014.jsonl.gz
+2026-05-21 03:56:38,788 - INFO - Exported raw data rows: 6,600,000
+2026-05-21 03:57:01,907 - INFO - Exported raw data rows: 6,700,000
+2026-05-21 03:57:20,469 - INFO - Exported raw data rows: 6,800,000
+2026-05-21 03:57:39,094 - INFO - Exported raw data rows: 6,900,000
+2026-05-21 03:57:57,630 - INFO - Exported raw data rows: 7,000,000
+2026-05-21 03:57:57,764 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000014.jsonl.gz
+2026-05-21 03:57:57,765 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000014.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000014.jsonl.gz
+2026-05-21 03:57:57,765 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000014.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000014.jsonl.gz
+2026-05-21 03:58:01,933 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000014.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000014.jsonl.gz
+  
+.....
+
+Average throughput: 113.5MiB/s
+2026-05-21 03:58:01,933 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000014.jsonl.gz
+2026-05-21 03:58:01,957 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000014.jsonl.gz
+2026-05-21 03:58:01,958 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000015.jsonl.gz
+2026-05-21 03:58:20,370 - INFO - Exported raw data rows: 7,100,000
+2026-05-21 03:58:39,172 - INFO - Exported raw data rows: 7,200,000
+2026-05-21 03:58:57,583 - INFO - Exported raw data rows: 7,300,000
+2026-05-21 03:59:15,291 - INFO - Exported raw data rows: 7,400,000
+2026-05-21 03:59:33,298 - INFO - Exported raw data rows: 7,500,000
+2026-05-21 03:59:33,446 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000015.jsonl.gz
+2026-05-21 03:59:33,446 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000015.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000015.jsonl.gz
+2026-05-21 03:59:33,446 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000015.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000015.jsonl.gz
+2026-05-21 03:59:36,085 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000015.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000015.jsonl.gz
+  
+....
+
+Average throughput: 141.5MiB/s
+2026-05-21 03:59:36,085 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000015.jsonl.gz
+2026-05-21 03:59:36,106 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000015.jsonl.gz
+2026-05-21 03:59:36,106 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000016.jsonl.gz
+2026-05-21 03:59:53,821 - INFO - Exported raw data rows: 7,600,000
+2026-05-21 04:00:12,337 - INFO - Exported raw data rows: 7,700,000
+2026-05-21 04:00:30,925 - INFO - Exported raw data rows: 7,800,000
+2026-05-21 04:00:49,195 - INFO - Exported raw data rows: 7,900,000
+2026-05-21 04:01:07,552 - INFO - Exported raw data rows: 8,000,000
+2026-05-21 04:01:07,693 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000016.jsonl.gz
+2026-05-21 04:01:07,693 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000016.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000016.jsonl.gz
+2026-05-21 04:01:07,693 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000016.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000016.jsonl.gz
+2026-05-21 04:01:10,771 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000016.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000016.jsonl.gz
+  
+......
+
+Average throughput: 103.3MiB/s
+2026-05-21 04:01:10,771 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000016.jsonl.gz
+2026-05-21 04:01:10,797 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000016.jsonl.gz
+2026-05-21 04:01:10,797 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000017.jsonl.gz
+2026-05-21 04:01:28,762 - INFO - Exported raw data rows: 8,100,000
+2026-05-21 04:01:46,945 - INFO - Exported raw data rows: 8,200,000
+2026-05-21 04:02:05,077 - INFO - Exported raw data rows: 8,300,000
+2026-05-21 04:02:23,289 - INFO - Exported raw data rows: 8,400,000
+2026-05-21 04:02:41,505 - INFO - Exported raw data rows: 8,500,000
+2026-05-21 04:02:41,628 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000017.jsonl.gz
+2026-05-21 04:02:41,628 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000017.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000017.jsonl.gz
+2026-05-21 04:02:41,628 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000017.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000017.jsonl.gz
+2026-05-21 04:02:44,525 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000017.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000017.jsonl.gz
+  
+......
+
+Average throughput: 96.5MiB/s
+2026-05-21 04:02:44,525 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000017.jsonl.gz
+2026-05-21 04:02:44,547 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000017.jsonl.gz
+2026-05-21 04:02:44,548 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000018.jsonl.gz
+2026-05-21 04:03:02,565 - INFO - Exported raw data rows: 8,600,000
+2026-05-21 04:03:21,044 - INFO - Exported raw data rows: 8,700,000
+2026-05-21 04:03:39,280 - INFO - Exported raw data rows: 8,800,000
+2026-05-21 04:03:57,491 - INFO - Exported raw data rows: 8,900,000
+2026-05-21 04:04:15,566 - INFO - Exported raw data rows: 9,000,000
+2026-05-21 04:04:15,756 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000018.jsonl.gz
+2026-05-21 04:04:15,756 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000018.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000018.jsonl.gz
+2026-05-21 04:04:15,756 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000018.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000018.jsonl.gz
+2026-05-21 04:04:18,981 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000018.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000018.jsonl.gz
+  
+......
+
+Average throughput: 103.6MiB/s
+2026-05-21 04:04:18,981 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000018.jsonl.gz
+2026-05-21 04:04:19,011 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000018.jsonl.gz
+2026-05-21 04:04:19,012 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000019.jsonl.gz
+2026-05-21 04:04:36,777 - INFO - Exported raw data rows: 9,100,000
+2026-05-21 04:04:55,324 - INFO - Exported raw data rows: 9,200,000
+2026-05-21 04:05:13,570 - INFO - Exported raw data rows: 9,300,000
+2026-05-21 04:05:31,958 - INFO - Exported raw data rows: 9,400,000
+2026-05-21 04:05:50,412 - INFO - Exported raw data rows: 9,500,000
+2026-05-21 04:05:50,592 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000019.jsonl.gz
+2026-05-21 04:05:50,592 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000019.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000019.jsonl.gz
+2026-05-21 04:05:50,592 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000019.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000019.jsonl.gz
+2026-05-21 04:05:53,451 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000019.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000019.jsonl.gz
+  
+.....
+
+Average throughput: 110.7MiB/s
+2026-05-21 04:05:53,452 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000019.jsonl.gz
+2026-05-21 04:05:53,475 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000019.jsonl.gz
+2026-05-21 04:05:53,475 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000020.jsonl.gz
+2026-05-21 04:06:13,223 - INFO - Exported raw data rows: 9,600,000
+2026-05-21 04:06:31,482 - INFO - Exported raw data rows: 9,700,000
+2026-05-21 04:06:49,301 - INFO - Exported raw data rows: 9,800,000
+2026-05-21 04:07:07,348 - INFO - Exported raw data rows: 9,900,000
+2026-05-21 04:07:25,556 - INFO - Exported raw data rows: 10,000,000
+2026-05-21 04:07:25,724 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000020.jsonl.gz
+2026-05-21 04:07:25,724 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000020.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000020.jsonl.gz
+2026-05-21 04:07:25,724 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000020.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000020.jsonl.gz
+2026-05-21 04:07:28,415 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000020.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000020.jsonl.gz
+  
+....
+
+Average throughput: 161.1MiB/s
+2026-05-21 04:07:28,415 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000020.jsonl.gz
+2026-05-21 04:07:28,436 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000020.jsonl.gz
+2026-05-21 04:07:28,437 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000021.jsonl.gz
+2026-05-21 04:07:46,656 - INFO - Exported raw data rows: 10,100,000
+2026-05-21 04:08:05,114 - INFO - Exported raw data rows: 10,200,000
+2026-05-21 04:08:23,738 - INFO - Exported raw data rows: 10,300,000
+2026-05-21 04:08:42,269 - INFO - Exported raw data rows: 10,400,000
+2026-05-21 04:09:00,291 - INFO - Exported raw data rows: 10,500,000
+2026-05-21 04:09:00,377 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000021.jsonl.gz
+2026-05-21 04:09:00,377 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000021.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000021.jsonl.gz
+2026-05-21 04:09:00,377 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000021.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000021.jsonl.gz
+2026-05-21 04:09:03,449 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000021.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000021.jsonl.gz
+  
+......
+
+Average throughput: 102.2MiB/s
+2026-05-21 04:09:03,449 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000021.jsonl.gz
+2026-05-21 04:09:03,469 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000021.jsonl.gz
+2026-05-21 04:09:03,470 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000022.jsonl.gz
+2026-05-21 04:09:21,103 - INFO - Exported raw data rows: 10,600,000
+2026-05-21 04:09:39,789 - INFO - Exported raw data rows: 10,700,000
+2026-05-21 04:09:58,408 - INFO - Exported raw data rows: 10,800,000
+2026-05-21 04:10:16,793 - INFO - Exported raw data rows: 10,900,000
+2026-05-21 04:10:35,377 - INFO - Exported raw data rows: 11,000,000
+2026-05-21 04:10:35,522 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000022.jsonl.gz
+2026-05-21 04:10:35,522 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000022.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000022.jsonl.gz
+2026-05-21 04:10:35,522 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000022.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000022.jsonl.gz
+2026-05-21 04:10:38,465 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000022.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000022.jsonl.gz
+  
+.....
+
+Average throughput: 111.7MiB/s
+2026-05-21 04:10:38,466 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000022.jsonl.gz
+2026-05-21 04:10:38,488 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000022.jsonl.gz
+2026-05-21 04:10:38,489 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000023.jsonl.gz
+2026-05-21 04:10:56,509 - INFO - Exported raw data rows: 11,100,000
+2026-05-21 04:11:14,705 - INFO - Exported raw data rows: 11,200,000
+2026-05-21 04:11:32,020 - INFO - Exported raw data rows: 11,300,000
+2026-05-21 04:11:49,660 - INFO - Exported raw data rows: 11,400,000
+2026-05-21 04:12:07,819 - INFO - Exported raw data rows: 11,500,000
+2026-05-21 04:12:07,959 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000023.jsonl.gz
+2026-05-21 04:12:07,959 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000023.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000023.jsonl.gz
+2026-05-21 04:12:07,959 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000023.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000023.jsonl.gz
+2026-05-21 04:12:11,047 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000023.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000023.jsonl.gz
+  
+......
+
+Average throughput: 89.8MiB/s
+2026-05-21 04:12:11,047 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000023.jsonl.gz
+2026-05-21 04:12:11,068 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000023.jsonl.gz
+2026-05-21 04:12:11,069 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000024.jsonl.gz
+2026-05-21 04:12:34,999 - INFO - Exported raw data rows: 11,600,000
+2026-05-21 04:12:55,681 - INFO - Exported raw data rows: 11,700,000
+2026-05-21 04:13:13,990 - INFO - Exported raw data rows: 11,800,000
+2026-05-21 04:13:32,609 - INFO - Exported raw data rows: 11,900,000
+2026-05-21 04:13:50,902 - INFO - Exported raw data rows: 12,000,000
+2026-05-21 04:13:51,102 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000024.jsonl.gz
+2026-05-21 04:13:51,102 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000024.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000024.jsonl.gz
+2026-05-21 04:13:51,102 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000024.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000024.jsonl.gz
+2026-05-21 04:13:55,513 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000024.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000024.jsonl.gz
+  
+......
+
+Average throughput: 100.4MiB/s
+2026-05-21 04:13:55,514 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000024.jsonl.gz
+2026-05-21 04:13:55,538 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000024.jsonl.gz
+2026-05-21 04:13:55,538 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000025.jsonl.gz
+2026-05-21 04:14:13,027 - INFO - Exported raw data rows: 12,100,000
+2026-05-21 04:14:31,010 - INFO - Exported raw data rows: 12,200,000
+2026-05-21 04:14:49,178 - INFO - Exported raw data rows: 12,300,000
+2026-05-21 04:15:07,137 - INFO - Exported raw data rows: 12,400,000
+2026-05-21 04:15:25,310 - INFO - Exported raw data rows: 12,500,000
+2026-05-21 04:15:25,447 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000025.jsonl.gz
+2026-05-21 04:15:25,447 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000025.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000025.jsonl.gz
+2026-05-21 04:15:25,448 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000025.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000025.jsonl.gz
+2026-05-21 04:15:28,255 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000025.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000025.jsonl.gz
+  
+.....
+
+Average throughput: 106.8MiB/s
+2026-05-21 04:15:28,256 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000025.jsonl.gz
+2026-05-21 04:15:28,280 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000025.jsonl.gz
+2026-05-21 04:15:28,280 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000026.jsonl.gz
+2026-05-21 04:15:46,279 - INFO - Exported raw data rows: 12,600,000
+2026-05-21 04:16:04,382 - INFO - Exported raw data rows: 12,700,000
+2026-05-21 04:16:23,400 - INFO - Exported raw data rows: 12,800,000
+2026-05-21 04:16:41,495 - INFO - Exported raw data rows: 12,900,000
+2026-05-21 04:16:59,343 - INFO - Exported raw data rows: 13,000,000
+2026-05-21 04:16:59,532 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000026.jsonl.gz
+2026-05-21 04:16:59,532 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000026.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000026.jsonl.gz
+2026-05-21 04:16:59,532 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000026.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000026.jsonl.gz
+2026-05-21 04:17:02,080 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000026.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000026.jsonl.gz
+  
+...
+
+Average throughput: 190.0MiB/s
+2026-05-21 04:17:02,080 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000026.jsonl.gz
+2026-05-21 04:17:02,103 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000026.jsonl.gz
+2026-05-21 04:17:02,103 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000027.jsonl.gz
+2026-05-21 04:17:19,726 - INFO - Exported raw data rows: 13,100,000
+2026-05-21 04:17:37,783 - INFO - Exported raw data rows: 13,200,000
+2026-05-21 04:17:55,812 - INFO - Exported raw data rows: 13,300,000
+2026-05-21 04:18:14,001 - INFO - Exported raw data rows: 13,400,000
+2026-05-21 04:18:34,532 - INFO - Exported raw data rows: 13,500,000
+2026-05-21 04:18:34,644 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000027.jsonl.gz
+2026-05-21 04:18:34,644 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000027.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000027.jsonl.gz
+2026-05-21 04:18:34,644 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000027.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000027.jsonl.gz
+2026-05-21 04:18:37,576 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000027.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000027.jsonl.gz
+  
+......
+
+Average throughput: 85.1MiB/s
+2026-05-21 04:18:37,576 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000027.jsonl.gz
+2026-05-21 04:18:37,598 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000027.jsonl.gz
+2026-05-21 04:18:37,598 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000028.jsonl.gz
+2026-05-21 04:18:55,376 - INFO - Exported raw data rows: 13,600,000
+2026-05-21 04:19:13,595 - INFO - Exported raw data rows: 13,700,000
+2026-05-21 04:19:31,737 - INFO - Exported raw data rows: 13,800,000
+2026-05-21 04:19:49,692 - INFO - Exported raw data rows: 13,900,000
+2026-05-21 04:20:07,692 - INFO - Exported raw data rows: 14,000,000
+2026-05-21 04:20:07,810 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000028.jsonl.gz
+2026-05-21 04:20:07,810 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000028.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000028.jsonl.gz
+2026-05-21 04:20:07,810 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000028.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000028.jsonl.gz
+2026-05-21 04:20:10,757 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000028.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000028.jsonl.gz
+  
+.....
+
+Average throughput: 114.4MiB/s
+2026-05-21 04:20:10,757 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000028.jsonl.gz
+2026-05-21 04:20:10,781 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000028.jsonl.gz
+2026-05-21 04:20:10,782 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000029.jsonl.gz
+2026-05-21 04:20:29,173 - INFO - Exported raw data rows: 14,100,000
+2026-05-21 04:20:47,183 - INFO - Exported raw data rows: 14,200,000
+2026-05-21 04:21:05,301 - INFO - Exported raw data rows: 14,300,000
+2026-05-21 04:21:23,444 - INFO - Exported raw data rows: 14,400,000
+2026-05-21 04:21:41,621 - INFO - Exported raw data rows: 14,500,000
+2026-05-21 04:21:41,822 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000029.jsonl.gz
+2026-05-21 04:21:41,822 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000029.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000029.jsonl.gz
+2026-05-21 04:21:41,822 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000029.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000029.jsonl.gz
+2026-05-21 04:21:44,942 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000029.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000029.jsonl.gz
+  
+......
+
+Average throughput: 103.9MiB/s
+2026-05-21 04:21:44,942 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000029.jsonl.gz
+2026-05-21 04:21:44,962 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000029.jsonl.gz
+2026-05-21 04:21:44,963 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000030.jsonl.gz
+2026-05-21 04:22:02,847 - INFO - Exported raw data rows: 14,600,000
+2026-05-21 04:22:20,730 - INFO - Exported raw data rows: 14,700,000
+2026-05-21 04:22:39,070 - INFO - Exported raw data rows: 14,800,000
+2026-05-21 04:22:57,424 - INFO - Exported raw data rows: 14,900,000
+2026-05-21 04:23:15,484 - INFO - Exported raw data rows: 15,000,000
+2026-05-21 04:23:15,704 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000030.jsonl.gz
+2026-05-21 04:23:15,704 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000030.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000030.jsonl.gz
+2026-05-21 04:23:15,704 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000030.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000030.jsonl.gz
+2026-05-21 04:23:18,473 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000030.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000030.jsonl.gz
+  
+.....
+
+Average throughput: 106.0MiB/s
+2026-05-21 04:23:18,473 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000030.jsonl.gz
+2026-05-21 04:23:18,496 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000030.jsonl.gz
+2026-05-21 04:23:18,496 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000031.jsonl.gz
+2026-05-21 04:23:36,207 - INFO - Exported raw data rows: 15,100,000
+2026-05-21 04:23:54,089 - INFO - Exported raw data rows: 15,200,000
+2026-05-21 04:24:11,856 - INFO - Exported raw data rows: 15,300,000
+2026-05-21 04:24:30,558 - INFO - Exported raw data rows: 15,400,000
+2026-05-21 04:24:48,722 - INFO - Exported raw data rows: 15,500,000
+2026-05-21 04:24:48,847 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000031.jsonl.gz
+2026-05-21 04:24:48,847 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000031.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000031.jsonl.gz
+2026-05-21 04:24:48,847 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000031.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000031.jsonl.gz
+2026-05-21 04:24:51,742 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000031.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000031.jsonl.gz
+  
+.....
+
+Average throughput: 105.5MiB/s
+2026-05-21 04:24:51,742 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000031.jsonl.gz
+2026-05-21 04:24:51,764 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000031.jsonl.gz
+2026-05-21 04:24:51,764 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000032.jsonl.gz
+2026-05-21 04:25:09,209 - INFO - Exported raw data rows: 15,600,000
+2026-05-21 04:25:27,262 - INFO - Exported raw data rows: 15,700,000
+2026-05-21 04:25:45,282 - INFO - Exported raw data rows: 15,800,000
+2026-05-21 04:26:03,137 - INFO - Exported raw data rows: 15,900,000
+2026-05-21 04:26:21,490 - INFO - Exported raw data rows: 16,000,000
+2026-05-21 04:26:21,648 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000032.jsonl.gz
+2026-05-21 04:26:21,648 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000032.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000032.jsonl.gz
+2026-05-21 04:26:21,648 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000032.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000032.jsonl.gz
+2026-05-21 04:26:24,765 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000032.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000032.jsonl.gz
+  
+......
+
+Average throughput: 94.6MiB/s
+2026-05-21 04:26:24,765 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000032.jsonl.gz
+2026-05-21 04:26:24,787 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000032.jsonl.gz
+2026-05-21 04:26:24,788 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000033.jsonl.gz
+2026-05-21 04:26:42,725 - INFO - Exported raw data rows: 16,100,000
+2026-05-21 04:27:00,930 - INFO - Exported raw data rows: 16,200,000
+2026-05-21 04:27:18,237 - INFO - Exported raw data rows: 16,300,000
+2026-05-21 04:27:36,084 - INFO - Exported raw data rows: 16,400,000
+2026-05-21 04:27:54,417 - INFO - Exported raw data rows: 16,500,000
+2026-05-21 04:27:54,589 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000033.jsonl.gz
+2026-05-21 04:27:54,589 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000033.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000033.jsonl.gz
+2026-05-21 04:27:54,589 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000033.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000033.jsonl.gz
+2026-05-21 04:27:57,458 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000033.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000033.jsonl.gz
+  
+.....
+
+Average throughput: 104.4MiB/s
+2026-05-21 04:27:57,458 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000033.jsonl.gz
+2026-05-21 04:27:57,479 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000033.jsonl.gz
+2026-05-21 04:27:57,479 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000034.jsonl.gz
+2026-05-21 04:28:15,496 - INFO - Exported raw data rows: 16,600,000
+2026-05-21 04:28:34,494 - INFO - Exported raw data rows: 16,700,000
+2026-05-21 04:28:53,433 - INFO - Exported raw data rows: 16,800,000
+2026-05-21 04:29:11,726 - INFO - Exported raw data rows: 16,900,000
+2026-05-21 04:29:29,464 - INFO - Exported raw data rows: 17,000,000
+2026-05-21 04:29:29,607 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000034.jsonl.gz
+2026-05-21 04:29:29,607 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000034.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000034.jsonl.gz
+2026-05-21 04:29:29,607 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000034.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000034.jsonl.gz
+2026-05-21 04:29:32,804 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000034.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000034.jsonl.gz
+  
+......
+
+Average throughput: 93.5MiB/s
+2026-05-21 04:29:32,804 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000034.jsonl.gz
+2026-05-21 04:29:32,826 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000034.jsonl.gz
+2026-05-21 04:29:32,827 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000035.jsonl.gz
+2026-05-21 04:29:50,485 - INFO - Exported raw data rows: 17,100,000
+2026-05-21 04:30:08,481 - INFO - Exported raw data rows: 17,200,000
+2026-05-21 04:30:26,831 - INFO - Exported raw data rows: 17,300,000
+2026-05-21 04:30:45,054 - INFO - Exported raw data rows: 17,400,000
+2026-05-21 04:31:03,081 - INFO - Exported raw data rows: 17,500,000
+2026-05-21 04:31:03,270 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000035.jsonl.gz
+2026-05-21 04:31:03,270 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000035.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000035.jsonl.gz
+2026-05-21 04:31:03,270 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000035.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000035.jsonl.gz
+2026-05-21 04:31:06,197 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000035.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000035.jsonl.gz
+  
+.....
+
+Average throughput: 129.4MiB/s
+2026-05-21 04:31:06,197 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000035.jsonl.gz
+2026-05-21 04:31:06,217 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000035.jsonl.gz
+2026-05-21 04:31:06,218 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000036.jsonl.gz
+2026-05-21 04:31:24,108 - INFO - Exported raw data rows: 17,600,000
+2026-05-21 04:31:41,986 - INFO - Exported raw data rows: 17,700,000
+2026-05-21 04:31:59,657 - INFO - Exported raw data rows: 17,800,000
+2026-05-21 04:32:17,345 - INFO - Exported raw data rows: 17,900,000
+2026-05-21 04:32:35,652 - INFO - Exported raw data rows: 18,000,000
+2026-05-21 04:32:35,789 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000036.jsonl.gz
+2026-05-21 04:32:35,789 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000036.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000036.jsonl.gz
+2026-05-21 04:32:35,789 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000036.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000036.jsonl.gz
+2026-05-21 04:32:38,912 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000036.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000036.jsonl.gz
+  
+......
+
+Average throughput: 97.6MiB/s
+2026-05-21 04:32:38,912 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000036.jsonl.gz
+2026-05-21 04:32:38,932 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000036.jsonl.gz
+2026-05-21 04:32:38,933 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000037.jsonl.gz
+2026-05-21 04:33:02,338 - INFO - Exported raw data rows: 18,100,000
+2026-05-21 04:33:22,995 - INFO - Exported raw data rows: 18,200,000
+2026-05-21 04:33:41,143 - INFO - Exported raw data rows: 18,300,000
+2026-05-21 04:33:59,043 - INFO - Exported raw data rows: 18,400,000
+2026-05-21 04:34:16,480 - INFO - Exported raw data rows: 18,500,000
+2026-05-21 04:34:16,621 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000037.jsonl.gz
+2026-05-21 04:34:16,621 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000037.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000037.jsonl.gz
+2026-05-21 04:34:16,621 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000037.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000037.jsonl.gz
+2026-05-21 04:34:20,805 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000037.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000037.jsonl.gz
+  
+.....
+
+Average throughput: 116.0MiB/s
+2026-05-21 04:34:20,805 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000037.jsonl.gz
+2026-05-21 04:34:20,827 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000037.jsonl.gz
+2026-05-21 04:34:20,827 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000038.jsonl.gz
+2026-05-21 04:34:38,539 - INFO - Exported raw data rows: 18,600,000
+2026-05-21 04:34:56,939 - INFO - Exported raw data rows: 18,700,000
+2026-05-21 04:35:14,856 - INFO - Exported raw data rows: 18,800,000
+2026-05-21 04:35:33,250 - INFO - Exported raw data rows: 18,900,000
+2026-05-21 04:35:51,267 - INFO - Exported raw data rows: 19,000,000
+2026-05-21 04:35:51,403 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000038.jsonl.gz
+2026-05-21 04:35:51,403 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000038.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000038.jsonl.gz
+2026-05-21 04:35:51,403 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000038.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000038.jsonl.gz
+2026-05-21 04:35:54,304 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000038.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000038.jsonl.gz
+  
+.....
+
+Average throughput: 110.0MiB/s
+2026-05-21 04:35:54,304 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000038.jsonl.gz
+2026-05-21 04:35:54,328 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000038.jsonl.gz
+2026-05-21 04:35:54,329 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000039.jsonl.gz
+2026-05-21 04:36:11,742 - INFO - Exported raw data rows: 19,100,000
+2026-05-21 04:36:29,777 - INFO - Exported raw data rows: 19,200,000
+2026-05-21 04:36:47,922 - INFO - Exported raw data rows: 19,300,000
+2026-05-21 04:37:05,400 - INFO - Exported raw data rows: 19,400,000
+2026-05-21 04:37:23,457 - INFO - Exported raw data rows: 19,500,000
+2026-05-21 04:37:23,616 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000039.jsonl.gz
+2026-05-21 04:37:23,616 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000039.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000039.jsonl.gz
+2026-05-21 04:37:23,616 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000039.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000039.jsonl.gz
+2026-05-21 04:37:26,709 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000039.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000039.jsonl.gz
+  
+......
+
+Average throughput: 108.0MiB/s
+2026-05-21 04:37:26,709 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000039.jsonl.gz
+2026-05-21 04:37:26,730 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000039.jsonl.gz
+2026-05-21 04:37:26,731 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000040.jsonl.gz
+2026-05-21 04:37:44,610 - INFO - Exported raw data rows: 19,600,000
+2026-05-21 04:38:02,548 - INFO - Exported raw data rows: 19,700,000
+2026-05-21 04:38:20,688 - INFO - Exported raw data rows: 19,800,000
+2026-05-21 04:38:38,672 - INFO - Exported raw data rows: 19,900,000
+2026-05-21 04:38:57,360 - INFO - Exported raw data rows: 20,000,000
+2026-05-21 04:38:57,490 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000040.jsonl.gz
+2026-05-21 04:38:57,491 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000040.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000040.jsonl.gz
+2026-05-21 04:38:57,491 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000040.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000040.jsonl.gz
+2026-05-21 04:39:00,465 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000040.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000040.jsonl.gz
+  
+......
+
+Average throughput: 86.2MiB/s
+2026-05-21 04:39:00,465 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000040.jsonl.gz
+2026-05-21 04:39:00,487 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000040.jsonl.gz
+2026-05-21 04:39:00,488 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000041.jsonl.gz
+2026-05-21 04:39:17,740 - INFO - Exported raw data rows: 20,100,000
+2026-05-21 04:39:35,566 - INFO - Exported raw data rows: 20,200,000
+2026-05-21 04:39:53,389 - INFO - Exported raw data rows: 20,300,000
+2026-05-21 04:40:11,024 - INFO - Exported raw data rows: 20,400,000
+2026-05-21 04:40:28,740 - INFO - Exported raw data rows: 20,500,000
+2026-05-21 04:40:28,925 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000041.jsonl.gz
+2026-05-21 04:40:28,925 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000041.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000041.jsonl.gz
+2026-05-21 04:40:28,925 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000041.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000041.jsonl.gz
+2026-05-21 04:40:32,082 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000041.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000041.jsonl.gz
+  
+......
+
+Average throughput: 88.8MiB/s
+2026-05-21 04:40:32,082 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000041.jsonl.gz
+2026-05-21 04:40:32,103 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000041.jsonl.gz
+2026-05-21 04:40:32,104 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000042.jsonl.gz
+2026-05-21 04:40:50,004 - INFO - Exported raw data rows: 20,600,000
+2026-05-21 04:41:07,907 - INFO - Exported raw data rows: 20,700,000
+2026-05-21 04:41:25,299 - INFO - Exported raw data rows: 20,800,000
+2026-05-21 04:41:43,296 - INFO - Exported raw data rows: 20,900,000
+2026-05-21 04:42:01,682 - INFO - Exported raw data rows: 21,000,000
+2026-05-21 04:42:01,815 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000042.jsonl.gz
+2026-05-21 04:42:01,815 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000042.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000042.jsonl.gz
+2026-05-21 04:42:01,815 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000042.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000042.jsonl.gz
+2026-05-21 04:42:04,660 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000042.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000042.jsonl.gz
+  
+.....
+
+Average throughput: 108.9MiB/s
+2026-05-21 04:42:04,660 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000042.jsonl.gz
+2026-05-21 04:42:04,683 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000042.jsonl.gz
+2026-05-21 04:42:04,683 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000043.jsonl.gz
+2026-05-21 04:42:22,769 - INFO - Exported raw data rows: 21,100,000
+2026-05-21 04:42:40,766 - INFO - Exported raw data rows: 21,200,000
+2026-05-21 04:42:59,792 - INFO - Exported raw data rows: 21,300,000
+2026-05-21 04:43:17,817 - INFO - Exported raw data rows: 21,400,000
+2026-05-21 04:43:35,523 - INFO - Exported raw data rows: 21,500,000
+2026-05-21 04:43:35,711 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000043.jsonl.gz
+2026-05-21 04:43:35,711 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000043.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000043.jsonl.gz
+2026-05-21 04:43:35,711 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000043.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000043.jsonl.gz
+2026-05-21 04:43:38,781 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000043.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000043.jsonl.gz
+  
+......
+
+Average throughput: 97.1MiB/s
+2026-05-21 04:43:38,781 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000043.jsonl.gz
+2026-05-21 04:43:38,803 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000043.jsonl.gz
+2026-05-21 04:43:38,803 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000044.jsonl.gz
+2026-05-21 04:43:56,412 - INFO - Exported raw data rows: 21,600,000
+2026-05-21 04:44:14,778 - INFO - Exported raw data rows: 21,700,000
+2026-05-21 04:44:33,106 - INFO - Exported raw data rows: 21,800,000
+2026-05-21 04:44:51,368 - INFO - Exported raw data rows: 21,900,000
+2026-05-21 04:45:09,483 - INFO - Exported raw data rows: 22,000,000
+2026-05-21 04:45:09,746 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000044.jsonl.gz
+2026-05-21 04:45:09,746 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000044.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000044.jsonl.gz
+2026-05-21 04:45:09,746 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000044.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000044.jsonl.gz
+2026-05-21 04:45:12,352 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000044.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000044.jsonl.gz
+  
+....
+
+Average throughput: 159.4MiB/s
+2026-05-21 04:45:12,352 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000044.jsonl.gz
+2026-05-21 04:45:12,374 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000044.jsonl.gz
+2026-05-21 04:45:12,375 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000045.jsonl.gz
+2026-05-21 04:45:30,361 - INFO - Exported raw data rows: 22,100,000
+2026-05-21 04:45:47,999 - INFO - Exported raw data rows: 22,200,000
+2026-05-21 04:46:04,898 - INFO - Exported raw data rows: 22,300,000
+2026-05-21 04:46:22,718 - INFO - Exported raw data rows: 22,400,000
+2026-05-21 04:46:40,814 - INFO - Exported raw data rows: 22,500,000
+2026-05-21 04:46:40,990 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000045.jsonl.gz
+2026-05-21 04:46:40,990 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000045.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000045.jsonl.gz
+2026-05-21 04:46:40,990 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000045.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000045.jsonl.gz
+2026-05-21 04:46:43,890 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000045.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000045.jsonl.gz
+  
+.....
+
+Average throughput: 113.8MiB/s
+2026-05-21 04:46:43,890 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000045.jsonl.gz
+2026-05-21 04:46:43,912 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000045.jsonl.gz
+2026-05-21 04:46:43,912 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000046.jsonl.gz
+2026-05-21 04:47:02,310 - INFO - Exported raw data rows: 22,600,000
+2026-05-21 04:47:20,263 - INFO - Exported raw data rows: 22,700,000
+2026-05-21 04:47:38,375 - INFO - Exported raw data rows: 22,800,000
+2026-05-21 04:47:56,554 - INFO - Exported raw data rows: 22,900,000
+2026-05-21 04:48:14,579 - INFO - Exported raw data rows: 23,000,000
+2026-05-21 04:48:14,751 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000046.jsonl.gz
+2026-05-21 04:48:14,751 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000046.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000046.jsonl.gz
+2026-05-21 04:48:14,751 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000046.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000046.jsonl.gz
+2026-05-21 04:48:17,839 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000046.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000046.jsonl.gz
+  
+......
+
+Average throughput: 99.3MiB/s
+2026-05-21 04:48:17,839 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000046.jsonl.gz
+2026-05-21 04:48:17,862 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000046.jsonl.gz
+2026-05-21 04:48:17,862 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000047.jsonl.gz
+2026-05-21 04:48:35,618 - INFO - Exported raw data rows: 23,100,000
+2026-05-21 04:48:53,734 - INFO - Exported raw data rows: 23,200,000
+2026-05-21 04:49:13,012 - INFO - Exported raw data rows: 23,300,000
+2026-05-21 04:49:31,240 - INFO - Exported raw data rows: 23,400,000
+2026-05-21 04:49:49,529 - INFO - Exported raw data rows: 23,500,000
+2026-05-21 04:49:49,733 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000047.jsonl.gz
+2026-05-21 04:49:49,733 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000047.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000047.jsonl.gz
+2026-05-21 04:49:49,733 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000047.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000047.jsonl.gz
+2026-05-21 04:49:52,625 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000047.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000047.jsonl.gz
+  
+.....
+
+Average throughput: 107.8MiB/s
+2026-05-21 04:49:52,625 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000047.jsonl.gz
+2026-05-21 04:49:52,646 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000047.jsonl.gz
+2026-05-21 04:49:52,647 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000048.jsonl.gz
+2026-05-21 04:50:10,346 - INFO - Exported raw data rows: 23,600,000
+2026-05-21 04:50:28,139 - INFO - Exported raw data rows: 23,700,000
+2026-05-21 04:50:45,681 - INFO - Exported raw data rows: 23,800,000
+2026-05-21 04:51:03,528 - INFO - Exported raw data rows: 23,900,000
+2026-05-21 04:51:21,807 - INFO - Exported raw data rows: 24,000,000
+2026-05-21 04:51:21,946 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000048.jsonl.gz
+2026-05-21 04:51:21,946 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000048.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000048.jsonl.gz
+2026-05-21 04:51:21,946 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000048.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000048.jsonl.gz
+2026-05-21 04:51:24,854 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000048.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000048.jsonl.gz
+  
+.....
+
+Average throughput: 106.2MiB/s
+2026-05-21 04:51:24,854 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000048.jsonl.gz
+2026-05-21 04:51:24,874 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000048.jsonl.gz
+2026-05-21 04:51:24,874 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000049.jsonl.gz
+2026-05-21 04:51:46,715 - INFO - Exported raw data rows: 24,100,000
+2026-05-21 04:52:09,986 - INFO - Exported raw data rows: 24,200,000
+2026-05-21 04:52:28,565 - INFO - Exported raw data rows: 24,300,000
+2026-05-21 04:52:46,622 - INFO - Exported raw data rows: 24,400,000
+2026-05-21 04:53:04,755 - INFO - Exported raw data rows: 24,500,000
+2026-05-21 04:53:04,897 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000049.jsonl.gz
+2026-05-21 04:53:04,897 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000049.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000049.jsonl.gz
+2026-05-21 04:53:04,897 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000049.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000049.jsonl.gz
+2026-05-21 04:53:09,325 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000049.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000049.jsonl.gz
+  
+......
+
+Average throughput: 94.6MiB/s
+2026-05-21 04:53:09,325 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000049.jsonl.gz
+2026-05-21 04:53:09,347 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000049.jsonl.gz
+2026-05-21 04:53:09,348 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000050.jsonl.gz
+2026-05-21 04:53:26,472 - INFO - Exported raw data rows: 24,600,000
+2026-05-21 04:53:44,176 - INFO - Exported raw data rows: 24,700,000
+2026-05-21 04:54:02,086 - INFO - Exported raw data rows: 24,800,000
+2026-05-21 04:54:20,069 - INFO - Exported raw data rows: 24,900,000
+2026-05-21 04:54:38,522 - INFO - Exported raw data rows: 25,000,000
+2026-05-21 04:54:38,669 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000050.jsonl.gz
+2026-05-21 04:54:38,669 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000050.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000050.jsonl.gz
+2026-05-21 04:54:38,669 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000050.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000050.jsonl.gz
+2026-05-21 04:54:41,593 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000050.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000050.jsonl.gz
+  
+.....
+
+Average throughput: 110.9MiB/s
+2026-05-21 04:54:41,594 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000050.jsonl.gz
+2026-05-21 04:54:41,616 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000050.jsonl.gz
+2026-05-21 04:54:41,616 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000051.jsonl.gz
+2026-05-21 04:54:59,412 - INFO - Exported raw data rows: 25,100,000
+2026-05-21 04:55:17,610 - INFO - Exported raw data rows: 25,200,000
+2026-05-21 04:55:35,168 - INFO - Exported raw data rows: 25,300,000
+2026-05-21 04:55:53,138 - INFO - Exported raw data rows: 25,400,000
+2026-05-21 04:56:11,506 - INFO - Exported raw data rows: 25,500,000
+2026-05-21 04:56:11,613 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000051.jsonl.gz
+2026-05-21 04:56:11,613 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000051.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000051.jsonl.gz
+2026-05-21 04:56:11,613 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000051.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000051.jsonl.gz
+2026-05-21 04:56:14,760 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000051.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000051.jsonl.gz
+  
+......
+
+Average throughput: 91.2MiB/s
+2026-05-21 04:56:14,761 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000051.jsonl.gz
+2026-05-21 04:56:14,784 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000051.jsonl.gz
+2026-05-21 04:56:14,785 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000052.jsonl.gz
+2026-05-21 04:56:32,699 - INFO - Exported raw data rows: 25,600,000
+2026-05-21 04:56:50,506 - INFO - Exported raw data rows: 25,700,000
+2026-05-21 04:57:08,476 - INFO - Exported raw data rows: 25,800,000
+2026-05-21 04:57:26,946 - INFO - Exported raw data rows: 25,900,000
+2026-05-21 04:57:44,015 - INFO - Exported raw data rows: 26,000,000
+2026-05-21 04:57:44,220 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000052.jsonl.gz
+2026-05-21 04:57:44,220 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000052.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000052.jsonl.gz
+2026-05-21 04:57:44,220 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000052.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000052.jsonl.gz
+2026-05-21 04:57:47,169 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000052.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000052.jsonl.gz
+  
+.....
+
+Average throughput: 120.1MiB/s
+2026-05-21 04:57:47,171 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000052.jsonl.gz
+2026-05-21 04:57:47,193 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000052.jsonl.gz
+2026-05-21 04:57:47,194 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000053.jsonl.gz
+2026-05-21 04:58:05,160 - INFO - Exported raw data rows: 26,100,000
+2026-05-21 04:58:23,828 - INFO - Exported raw data rows: 26,200,000
+2026-05-21 04:58:42,029 - INFO - Exported raw data rows: 26,300,000
+2026-05-21 04:58:59,875 - INFO - Exported raw data rows: 26,400,000
+2026-05-21 04:59:18,603 - INFO - Exported raw data rows: 26,500,000
+2026-05-21 04:59:18,750 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000053.jsonl.gz
+2026-05-21 04:59:18,750 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000053.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000053.jsonl.gz
+2026-05-21 04:59:18,750 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000053.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000053.jsonl.gz
+2026-05-21 04:59:21,696 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000053.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000053.jsonl.gz
+  
+.....
+
+Average throughput: 108.0MiB/s
+2026-05-21 04:59:21,696 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000053.jsonl.gz
+2026-05-21 04:59:21,718 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000053.jsonl.gz
+2026-05-21 04:59:21,718 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000054.jsonl.gz
+2026-05-21 04:59:39,148 - INFO - Exported raw data rows: 26,600,000
+2026-05-21 04:59:56,620 - INFO - Exported raw data rows: 26,700,000
+2026-05-21 05:00:14,829 - INFO - Exported raw data rows: 26,800,000
+2026-05-21 05:00:32,902 - INFO - Exported raw data rows: 26,900,000
+2026-05-21 05:00:50,511 - INFO - Exported raw data rows: 27,000,000
+2026-05-21 05:00:50,613 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000054.jsonl.gz
+2026-05-21 05:00:50,614 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000054.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000054.jsonl.gz
+2026-05-21 05:00:50,614 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000054.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000054.jsonl.gz
+2026-05-21 05:00:53,511 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000054.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000054.jsonl.gz
+  
+.....
+
+Average throughput: 124.0MiB/s
+2026-05-21 05:00:53,512 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000054.jsonl.gz
+2026-05-21 05:00:53,535 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000054.jsonl.gz
+2026-05-21 05:00:53,536 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000055.jsonl.gz
+2026-05-21 05:01:10,926 - INFO - Exported raw data rows: 27,100,000
+2026-05-21 05:01:29,605 - INFO - Exported raw data rows: 27,200,000
+2026-05-21 05:01:47,280 - INFO - Exported raw data rows: 27,300,000
+2026-05-21 05:02:05,404 - INFO - Exported raw data rows: 27,400,000
+2026-05-21 05:02:23,640 - INFO - Exported raw data rows: 27,500,000
+2026-05-21 05:02:23,868 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000055.jsonl.gz
+2026-05-21 05:02:23,868 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000055.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000055.jsonl.gz
+2026-05-21 05:02:23,868 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000055.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000055.jsonl.gz
+2026-05-21 05:02:26,738 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000055.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000055.jsonl.gz
+  
+.....
+
+Average throughput: 124.6MiB/s
+2026-05-21 05:02:26,739 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000055.jsonl.gz
+2026-05-21 05:02:26,759 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000055.jsonl.gz
+2026-05-21 05:02:26,760 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000056.jsonl.gz
+2026-05-21 05:02:44,721 - INFO - Exported raw data rows: 27,600,000
+2026-05-21 05:03:02,403 - INFO - Exported raw data rows: 27,700,000
+2026-05-21 05:03:19,834 - INFO - Exported raw data rows: 27,800,000
+2026-05-21 05:03:37,991 - INFO - Exported raw data rows: 27,900,000
+2026-05-21 05:03:56,039 - INFO - Exported raw data rows: 28,000,000
+2026-05-21 05:03:56,195 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000056.jsonl.gz
+2026-05-21 05:03:56,195 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000056.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000056.jsonl.gz
+2026-05-21 05:03:56,195 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000056.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000056.jsonl.gz
+2026-05-21 05:03:59,078 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000056.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000056.jsonl.gz
+  
+.....
+
+Average throughput: 118.8MiB/s
+2026-05-21 05:03:59,078 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000056.jsonl.gz
+2026-05-21 05:03:59,101 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000056.jsonl.gz
+2026-05-21 05:03:59,101 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000057.jsonl.gz
+2026-05-21 05:04:16,882 - INFO - Exported raw data rows: 28,100,000
+2026-05-21 05:04:34,763 - INFO - Exported raw data rows: 28,200,000
+2026-05-21 05:04:52,641 - INFO - Exported raw data rows: 28,300,000
+2026-05-21 05:05:10,215 - INFO - Exported raw data rows: 28,400,000
+2026-05-21 05:05:28,583 - INFO - Exported raw data rows: 28,500,000
+2026-05-21 05:05:28,709 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000057.jsonl.gz
+2026-05-21 05:05:28,709 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000057.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000057.jsonl.gz
+2026-05-21 05:05:28,709 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000057.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000057.jsonl.gz
+2026-05-21 05:05:31,439 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000057.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000057.jsonl.gz
+  
+....
+
+Average throughput: 164.5MiB/s
+2026-05-21 05:05:31,439 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000057.jsonl.gz
+2026-05-21 05:05:31,462 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000057.jsonl.gz
+2026-05-21 05:05:31,463 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000058.jsonl.gz
+2026-05-21 05:05:49,363 - INFO - Exported raw data rows: 28,600,000
+2026-05-21 05:06:07,601 - INFO - Exported raw data rows: 28,700,000
+2026-05-21 05:06:25,968 - INFO - Exported raw data rows: 28,800,000
+2026-05-21 05:06:44,214 - INFO - Exported raw data rows: 28,900,000
+2026-05-21 05:07:02,262 - INFO - Exported raw data rows: 29,000,000
+2026-05-21 05:07:02,445 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000058.jsonl.gz
+2026-05-21 05:07:02,446 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000058.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000058.jsonl.gz
+2026-05-21 05:07:02,446 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000058.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000058.jsonl.gz
+2026-05-21 05:07:04,872 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000058.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000058.jsonl.gz
+  
+...
+
+Average throughput: 184.1MiB/s
+2026-05-21 05:07:04,873 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000058.jsonl.gz
+2026-05-21 05:07:04,893 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000058.jsonl.gz
+2026-05-21 05:07:04,893 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000059.jsonl.gz
+2026-05-21 05:07:22,157 - INFO - Exported raw data rows: 29,100,000
+2026-05-21 05:07:40,220 - INFO - Exported raw data rows: 29,200,000
+2026-05-21 05:07:58,444 - INFO - Exported raw data rows: 29,300,000
+2026-05-21 05:08:16,438 - INFO - Exported raw data rows: 29,400,000
+2026-05-21 05:08:43,909 - INFO - Exported raw data rows: 29,500,000
+2026-05-21 05:08:44,197 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000059.jsonl.gz
+2026-05-21 05:08:44,197 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000059.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000059.jsonl.gz
+2026-05-21 05:08:44,198 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000059.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000059.jsonl.gz
+2026-05-21 05:08:49,550 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000059.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000059.jsonl.gz
+  
+....
+
+Average throughput: 146.5MiB/s
+2026-05-21 05:08:49,550 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000059.jsonl.gz
+2026-05-21 05:08:49,570 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000059.jsonl.gz
+2026-05-21 05:08:49,571 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000060.jsonl.gz
+2026-05-21 05:09:06,895 - INFO - Exported raw data rows: 29,600,000
+2026-05-21 05:09:24,022 - INFO - Exported raw data rows: 29,700,000
+2026-05-21 05:09:43,105 - INFO - Exported raw data rows: 29,800,000
+2026-05-21 05:10:00,855 - INFO - Exported raw data rows: 29,900,000
+2026-05-21 05:10:18,576 - INFO - Exported raw data rows: 30,000,000
+2026-05-21 05:10:18,734 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000060.jsonl.gz
+2026-05-21 05:10:18,734 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000060.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000060.jsonl.gz
+2026-05-21 05:10:18,734 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000060.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000060.jsonl.gz
+2026-05-21 05:10:21,825 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000060.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000060.jsonl.gz
+  
+.....
+
+Average throughput: 120.1MiB/s
+2026-05-21 05:10:21,826 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000060.jsonl.gz
+2026-05-21 05:10:21,847 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000060.jsonl.gz
+2026-05-21 05:10:21,848 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000061.jsonl.gz
+2026-05-21 05:10:39,165 - INFO - Exported raw data rows: 30,100,000
+2026-05-21 05:10:56,557 - INFO - Exported raw data rows: 30,200,000
+2026-05-21 05:11:14,721 - INFO - Exported raw data rows: 30,300,000
+2026-05-21 05:11:33,397 - INFO - Exported raw data rows: 30,400,000
+2026-05-21 05:11:51,230 - INFO - Exported raw data rows: 30,500,000
+2026-05-21 05:11:51,474 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000061.jsonl.gz
+2026-05-21 05:11:51,474 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000061.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000061.jsonl.gz
+2026-05-21 05:11:51,474 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000061.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000061.jsonl.gz
+2026-05-21 05:11:54,587 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000061.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000061.jsonl.gz
+  
+......
+
+Average throughput: 97.8MiB/s
+2026-05-21 05:11:54,588 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000061.jsonl.gz
+2026-05-21 05:11:54,610 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000061.jsonl.gz
+2026-05-21 05:11:54,610 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000062.jsonl.gz
+2026-05-21 05:12:12,173 - INFO - Exported raw data rows: 30,600,000
+2026-05-21 05:12:29,945 - INFO - Exported raw data rows: 30,700,000
+2026-05-21 05:12:47,890 - INFO - Exported raw data rows: 30,800,000
+2026-05-21 05:13:06,220 - INFO - Exported raw data rows: 30,900,000
+2026-05-21 05:13:24,086 - INFO - Exported raw data rows: 31,000,000
+2026-05-21 05:13:24,311 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000062.jsonl.gz
+2026-05-21 05:13:24,311 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000062.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000062.jsonl.gz
+2026-05-21 05:13:24,311 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000062.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000062.jsonl.gz
+2026-05-21 05:13:27,240 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000062.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000062.jsonl.gz
+  
+.....
+
+Average throughput: 107.2MiB/s
+2026-05-21 05:13:27,240 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000062.jsonl.gz
+2026-05-21 05:13:27,262 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000062.jsonl.gz
+2026-05-21 05:13:27,265 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000063.jsonl.gz
+2026-05-21 05:13:45,544 - INFO - Exported raw data rows: 31,100,000
+2026-05-21 05:14:03,037 - INFO - Exported raw data rows: 31,200,000
+2026-05-21 05:14:20,857 - INFO - Exported raw data rows: 31,300,000
+2026-05-21 05:14:39,104 - INFO - Exported raw data rows: 31,400,000
+2026-05-21 05:14:56,962 - INFO - Exported raw data rows: 31,500,000
+2026-05-21 05:14:57,108 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000063.jsonl.gz
+2026-05-21 05:14:57,108 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000063.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000063.jsonl.gz
+2026-05-21 05:14:57,108 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000063.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000063.jsonl.gz
+2026-05-21 05:14:59,814 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000063.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000063.jsonl.gz
+  
+....
+
+Average throughput: 130.8MiB/s
+2026-05-21 05:14:59,815 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000063.jsonl.gz
+2026-05-21 05:14:59,836 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000063.jsonl.gz
+2026-05-21 05:14:59,837 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000064.jsonl.gz
+2026-05-21 05:15:17,512 - INFO - Exported raw data rows: 31,600,000
+2026-05-21 05:15:35,217 - INFO - Exported raw data rows: 31,700,000
+2026-05-21 05:15:54,060 - INFO - Exported raw data rows: 31,800,000
+2026-05-21 05:16:12,083 - INFO - Exported raw data rows: 31,900,000
+2026-05-21 05:16:30,557 - INFO - Exported raw data rows: 32,000,000
+2026-05-21 05:16:30,705 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000064.jsonl.gz
+2026-05-21 05:16:30,705 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000064.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000064.jsonl.gz
+2026-05-21 05:16:30,705 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000064.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000064.jsonl.gz
+2026-05-21 05:16:33,616 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000064.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000064.jsonl.gz
+  
+.....
+
+Average throughput: 128.2MiB/s
+2026-05-21 05:16:33,616 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000064.jsonl.gz
+2026-05-21 05:16:33,637 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000064.jsonl.gz
+2026-05-21 05:16:33,638 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000065.jsonl.gz
+2026-05-21 05:16:51,666 - INFO - Exported raw data rows: 32,100,000
+2026-05-21 05:17:09,401 - INFO - Exported raw data rows: 32,200,000
+2026-05-21 05:17:27,104 - INFO - Exported raw data rows: 32,300,000
+2026-05-21 05:17:44,840 - INFO - Exported raw data rows: 32,400,000
+2026-05-21 05:18:03,023 - INFO - Exported raw data rows: 32,500,000
+2026-05-21 05:18:03,260 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000065.jsonl.gz
+2026-05-21 05:18:03,260 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000065.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000065.jsonl.gz
+2026-05-21 05:18:03,260 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000065.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000065.jsonl.gz
+2026-05-21 05:18:06,176 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000065.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000065.jsonl.gz
+  
+.....
+
+Average throughput: 111.0MiB/s
+2026-05-21 05:18:06,176 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000065.jsonl.gz
+2026-05-21 05:18:06,197 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000065.jsonl.gz
+2026-05-21 05:18:06,197 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000066.jsonl.gz
+2026-05-21 05:18:24,926 - INFO - Exported raw data rows: 32,600,000
+2026-05-21 05:18:43,599 - INFO - Exported raw data rows: 32,700,000
+2026-05-21 05:19:01,626 - INFO - Exported raw data rows: 32,800,000
+2026-05-21 05:19:20,145 - INFO - Exported raw data rows: 32,900,000
+2026-05-21 05:19:38,036 - INFO - Exported raw data rows: 33,000,000
+2026-05-21 05:19:38,192 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000066.jsonl.gz
+2026-05-21 05:19:38,192 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000066.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000066.jsonl.gz
+2026-05-21 05:19:38,192 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000066.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000066.jsonl.gz
+2026-05-21 05:19:41,133 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000066.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000066.jsonl.gz
+  
+.....
+
+Average throughput: 101.5MiB/s
+2026-05-21 05:19:41,133 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000066.jsonl.gz
+2026-05-21 05:19:41,155 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000066.jsonl.gz
+2026-05-21 05:19:41,156 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000067.jsonl.gz
+2026-05-21 05:20:08,827 - INFO - Exported raw data rows: 33,100,000
+2026-05-21 05:20:27,239 - INFO - Exported raw data rows: 33,200,000
+2026-05-21 05:20:45,555 - INFO - Exported raw data rows: 33,300,000
+2026-05-21 05:21:03,646 - INFO - Exported raw data rows: 33,400,000
+2026-05-21 05:21:20,968 - INFO - Exported raw data rows: 33,500,000
+2026-05-21 05:21:21,105 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000067.jsonl.gz
+2026-05-21 05:21:21,105 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000067.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000067.jsonl.gz
+2026-05-21 05:21:21,105 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000067.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000067.jsonl.gz
+2026-05-21 05:21:25,119 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000067.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000067.jsonl.gz
+  
+....
+
+Average throughput: 134.6MiB/s
+2026-05-21 05:21:25,120 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000067.jsonl.gz
+2026-05-21 05:21:25,142 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000067.jsonl.gz
+2026-05-21 05:21:25,142 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000068.jsonl.gz
+2026-05-21 05:21:42,936 - INFO - Exported raw data rows: 33,600,000
+2026-05-21 05:22:01,354 - INFO - Exported raw data rows: 33,700,000
+2026-05-21 05:22:19,144 - INFO - Exported raw data rows: 33,800,000
+2026-05-21 05:22:37,047 - INFO - Exported raw data rows: 33,900,000
+2026-05-21 05:22:54,778 - INFO - Exported raw data rows: 34,000,000
+2026-05-21 05:22:54,911 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000068.jsonl.gz
+2026-05-21 05:22:54,911 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000068.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000068.jsonl.gz
+2026-05-21 05:22:54,911 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000068.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000068.jsonl.gz
+2026-05-21 05:22:57,866 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000068.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000068.jsonl.gz
+  
+.....
+
+Average throughput: 122.4MiB/s
+2026-05-21 05:22:57,866 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000068.jsonl.gz
+2026-05-21 05:22:57,887 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000068.jsonl.gz
+2026-05-21 05:22:57,888 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000069.jsonl.gz
+2026-05-21 05:23:15,635 - INFO - Exported raw data rows: 34,100,000
+2026-05-21 05:23:33,814 - INFO - Exported raw data rows: 34,200,000
+2026-05-21 05:23:52,303 - INFO - Exported raw data rows: 34,300,000
+2026-05-21 05:24:10,245 - INFO - Exported raw data rows: 34,400,000
+2026-05-21 05:24:27,648 - INFO - Exported raw data rows: 34,500,000
+2026-05-21 05:24:27,757 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000069.jsonl.gz
+2026-05-21 05:24:27,757 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000069.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000069.jsonl.gz
+2026-05-21 05:24:27,757 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000069.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000069.jsonl.gz
+2026-05-21 05:24:30,889 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000069.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000069.jsonl.gz
+  
+......
+
+Average throughput: 86.5MiB/s
+2026-05-21 05:24:30,890 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000069.jsonl.gz
+2026-05-21 05:24:30,911 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000069.jsonl.gz
+2026-05-21 05:24:30,911 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000070.jsonl.gz
+2026-05-21 05:24:48,564 - INFO - Exported raw data rows: 34,600,000
+2026-05-21 05:25:06,402 - INFO - Exported raw data rows: 34,700,000
+2026-05-21 05:25:24,254 - INFO - Exported raw data rows: 34,800,000
+2026-05-21 05:25:42,254 - INFO - Exported raw data rows: 34,900,000
+2026-05-21 05:26:01,100 - INFO - Exported raw data rows: 35,000,000
+2026-05-21 05:26:01,222 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000070.jsonl.gz
+2026-05-21 05:26:01,222 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000070.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000070.jsonl.gz
+2026-05-21 05:26:01,222 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000070.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000070.jsonl.gz
+2026-05-21 05:26:04,101 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000070.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000070.jsonl.gz
+  
+.....
+
+Average throughput: 118.0MiB/s
+2026-05-21 05:26:04,101 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000070.jsonl.gz
+2026-05-21 05:26:04,123 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000070.jsonl.gz
+2026-05-21 05:26:04,123 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000071.jsonl.gz
+2026-05-21 05:26:21,925 - INFO - Exported raw data rows: 35,100,000
+2026-05-21 05:26:40,300 - INFO - Exported raw data rows: 35,200,000
+2026-05-21 05:26:58,282 - INFO - Exported raw data rows: 35,300,000
+2026-05-21 05:27:15,995 - INFO - Exported raw data rows: 35,400,000
+2026-05-21 05:27:33,832 - INFO - Exported raw data rows: 35,500,000
+2026-05-21 05:27:34,023 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000071.jsonl.gz
+2026-05-21 05:27:34,023 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000071.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000071.jsonl.gz
+2026-05-21 05:27:34,023 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000071.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000071.jsonl.gz
+2026-05-21 05:27:36,922 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000071.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000071.jsonl.gz
+  
+.....
+
+Average throughput: 119.3MiB/s
+2026-05-21 05:27:36,922 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000071.jsonl.gz
+2026-05-21 05:27:36,946 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000071.jsonl.gz
+2026-05-21 05:27:36,946 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000072.jsonl.gz
+2026-05-21 05:27:54,533 - INFO - Exported raw data rows: 35,600,000
+2026-05-21 05:28:12,760 - INFO - Exported raw data rows: 35,700,000
+2026-05-21 05:28:31,302 - INFO - Exported raw data rows: 35,800,000
+2026-05-21 05:28:50,165 - INFO - Exported raw data rows: 35,900,000
+2026-05-21 05:29:08,403 - INFO - Exported raw data rows: 36,000,000
+2026-05-21 05:29:08,572 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000072.jsonl.gz
+2026-05-21 05:29:08,572 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000072.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000072.jsonl.gz
+2026-05-21 05:29:08,572 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000072.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000072.jsonl.gz
+2026-05-21 05:29:11,492 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000072.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000072.jsonl.gz
+  
+.....
+
+Average throughput: 112.5MiB/s
+2026-05-21 05:29:11,493 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000072.jsonl.gz
+2026-05-21 05:29:11,516 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000072.jsonl.gz
+2026-05-21 05:29:11,516 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000073.jsonl.gz
+2026-05-21 05:29:29,522 - INFO - Exported raw data rows: 36,100,000
+2026-05-21 05:29:47,327 - INFO - Exported raw data rows: 36,200,000
+2026-05-21 05:30:05,665 - INFO - Exported raw data rows: 36,300,000
+2026-05-21 05:30:23,866 - INFO - Exported raw data rows: 36,400,000
+2026-05-21 05:30:42,199 - INFO - Exported raw data rows: 36,500,000
+2026-05-21 05:30:42,349 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000073.jsonl.gz
+2026-05-21 05:30:42,349 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000073.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000073.jsonl.gz
+2026-05-21 05:30:42,349 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000073.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000073.jsonl.gz
+2026-05-21 05:30:45,212 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000073.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000073.jsonl.gz
+  
+.....
+
+Average throughput: 102.0MiB/s
+2026-05-21 05:30:45,212 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000073.jsonl.gz
+2026-05-21 05:30:45,233 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000073.jsonl.gz
+2026-05-21 05:30:45,234 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000074.jsonl.gz
+2026-05-21 05:31:02,946 - INFO - Exported raw data rows: 36,600,000
+2026-05-21 05:31:20,422 - INFO - Exported raw data rows: 36,700,000
+2026-05-21 05:31:38,444 - INFO - Exported raw data rows: 36,800,000
+2026-05-21 05:31:56,476 - INFO - Exported raw data rows: 36,900,000
+2026-05-21 05:32:15,360 - INFO - Exported raw data rows: 37,000,000
+2026-05-21 05:32:15,537 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000074.jsonl.gz
+2026-05-21 05:32:15,538 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000074.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000074.jsonl.gz
+2026-05-21 05:32:15,538 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000074.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000074.jsonl.gz
+2026-05-21 05:32:18,404 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000074.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000074.jsonl.gz
+  
+.....
+
+Average throughput: 102.4MiB/s
+2026-05-21 05:32:18,404 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000074.jsonl.gz
+2026-05-21 05:32:18,425 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000074.jsonl.gz
+2026-05-21 05:32:18,426 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000075.jsonl.gz
+2026-05-21 05:32:35,854 - INFO - Exported raw data rows: 37,100,000
+2026-05-21 05:32:53,264 - INFO - Exported raw data rows: 37,200,000
+2026-05-21 05:33:10,841 - INFO - Exported raw data rows: 37,300,000
+2026-05-21 05:33:28,202 - INFO - Exported raw data rows: 37,400,000
+2026-05-21 05:33:46,300 - INFO - Exported raw data rows: 37,500,000
+2026-05-21 05:33:46,404 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000075.jsonl.gz
+2026-05-21 05:33:46,404 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000075.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000075.jsonl.gz
+2026-05-21 05:33:46,404 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000075.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000075.jsonl.gz
+2026-05-21 05:33:49,741 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000075.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000075.jsonl.gz
+  
+.......
+
+Average throughput: 83.5MiB/s
+2026-05-21 05:33:49,741 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000075.jsonl.gz
+2026-05-21 05:33:49,759 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000075.jsonl.gz
+2026-05-21 05:33:49,760 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000076.jsonl.gz
+2026-05-21 05:34:07,352 - INFO - Exported raw data rows: 37,600,000
+2026-05-21 05:34:25,358 - INFO - Exported raw data rows: 37,700,000
+2026-05-21 05:34:43,731 - INFO - Exported raw data rows: 37,800,000
+2026-05-21 05:35:01,675 - INFO - Exported raw data rows: 37,900,000
+2026-05-21 05:35:18,812 - INFO - Exported raw data rows: 38,000,000
+2026-05-21 05:35:18,908 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000076.jsonl.gz
+2026-05-21 05:35:18,908 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000076.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000076.jsonl.gz
+2026-05-21 05:35:18,908 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000076.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000076.jsonl.gz
+2026-05-21 05:35:21,814 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000076.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000076.jsonl.gz
+  
+.....
+
+Average throughput: 124.3MiB/s
+2026-05-21 05:35:21,814 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000076.jsonl.gz
+2026-05-21 05:35:21,835 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000076.jsonl.gz
+2026-05-21 05:35:21,836 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000077.jsonl.gz
+2026-05-21 05:35:39,180 - INFO - Exported raw data rows: 38,100,000
+2026-05-21 05:35:57,358 - INFO - Exported raw data rows: 38,200,000
+2026-05-21 05:36:15,129 - INFO - Exported raw data rows: 38,300,000
+2026-05-21 05:36:33,163 - INFO - Exported raw data rows: 38,400,000
+2026-05-21 05:36:50,550 - INFO - Exported raw data rows: 38,500,000
+2026-05-21 05:36:50,676 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000077.jsonl.gz
+2026-05-21 05:36:50,676 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000077.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000077.jsonl.gz
+2026-05-21 05:36:50,676 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000077.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000077.jsonl.gz
+2026-05-21 05:36:53,165 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000077.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000077.jsonl.gz
+  
+...
+
+Average throughput: 183.8MiB/s
+2026-05-21 05:36:53,165 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000077.jsonl.gz
+2026-05-21 05:36:53,185 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000077.jsonl.gz
+2026-05-21 05:36:53,185 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000078.jsonl.gz
+2026-05-21 05:37:11,024 - INFO - Exported raw data rows: 38,600,000
+2026-05-21 05:37:28,981 - INFO - Exported raw data rows: 38,700,000
+2026-05-21 05:37:46,731 - INFO - Exported raw data rows: 38,800,000
+2026-05-21 05:38:04,106 - INFO - Exported raw data rows: 38,900,000
+2026-05-21 05:38:22,763 - INFO - Exported raw data rows: 39,000,000
+2026-05-21 05:38:22,886 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000078.jsonl.gz
+2026-05-21 05:38:22,886 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000078.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000078.jsonl.gz
+2026-05-21 05:38:22,886 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000078.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000078.jsonl.gz
+2026-05-21 05:38:25,889 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000078.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000078.jsonl.gz
+  
+......
+
+Average throughput: 89.3MiB/s
+2026-05-21 05:38:25,889 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000078.jsonl.gz
+2026-05-21 05:38:25,910 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000078.jsonl.gz
+2026-05-21 05:38:25,910 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000079.jsonl.gz
+2026-05-21 05:38:44,154 - INFO - Exported raw data rows: 39,100,000
+2026-05-21 05:39:02,128 - INFO - Exported raw data rows: 39,200,000
+2026-05-21 05:39:19,651 - INFO - Exported raw data rows: 39,300,000
+2026-05-21 05:39:37,234 - INFO - Exported raw data rows: 39,400,000
+2026-05-21 05:39:55,397 - INFO - Exported raw data rows: 39,500,000
+2026-05-21 05:39:55,567 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000079.jsonl.gz
+2026-05-21 05:39:55,567 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000079.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000079.jsonl.gz
+2026-05-21 05:39:55,567 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000079.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000079.jsonl.gz
+2026-05-21 05:39:58,410 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000079.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000079.jsonl.gz
+  
+.....
+
+Average throughput: 103.6MiB/s
+2026-05-21 05:39:58,410 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000079.jsonl.gz
+2026-05-21 05:39:58,431 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000079.jsonl.gz
+2026-05-21 05:39:58,431 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000080.jsonl.gz
+2026-05-21 05:40:16,511 - INFO - Exported raw data rows: 39,600,000
+2026-05-21 05:40:34,541 - INFO - Exported raw data rows: 39,700,000
+2026-05-21 05:40:51,965 - INFO - Exported raw data rows: 39,800,000
+2026-05-21 05:41:09,521 - INFO - Exported raw data rows: 39,900,000
+2026-05-21 05:41:27,450 - INFO - Exported raw data rows: 40,000,000
+2026-05-21 05:41:27,618 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000080.jsonl.gz
+2026-05-21 05:41:27,618 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000080.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000080.jsonl.gz
+2026-05-21 05:41:27,618 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000080.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000080.jsonl.gz
+2026-05-21 05:41:30,784 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000080.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000080.jsonl.gz
+  
+......
+
+Average throughput: 87.1MiB/s
+2026-05-21 05:41:30,784 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000080.jsonl.gz
+2026-05-21 05:41:30,804 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000080.jsonl.gz
+2026-05-21 05:41:30,805 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000081.jsonl.gz
+2026-05-21 05:41:47,835 - INFO - Exported raw data rows: 40,100,000
+2026-05-21 05:42:05,469 - INFO - Exported raw data rows: 40,200,000
+2026-05-21 05:42:23,523 - INFO - Exported raw data rows: 40,300,000
+2026-05-21 05:42:41,130 - INFO - Exported raw data rows: 40,400,000
+2026-05-21 05:42:58,577 - INFO - Exported raw data rows: 40,500,000
+2026-05-21 05:42:58,779 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000081.jsonl.gz
+2026-05-21 05:42:58,779 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000081.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000081.jsonl.gz
+2026-05-21 05:42:58,779 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000081.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000081.jsonl.gz
+2026-05-21 05:43:01,843 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000081.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000081.jsonl.gz
+  
+......
+
+Average throughput: 82.9MiB/s
+2026-05-21 05:43:01,843 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000081.jsonl.gz
+2026-05-21 05:43:01,864 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000081.jsonl.gz
+2026-05-21 05:43:01,864 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000082.jsonl.gz
+2026-05-21 05:43:18,966 - INFO - Exported raw data rows: 40,600,000
+2026-05-21 05:43:36,439 - INFO - Exported raw data rows: 40,700,000
+2026-05-21 05:43:54,176 - INFO - Exported raw data rows: 40,800,000
+2026-05-21 05:44:12,146 - INFO - Exported raw data rows: 40,900,000
+2026-05-21 05:44:29,635 - INFO - Exported raw data rows: 41,000,000
+2026-05-21 05:44:29,781 - INFO - Finished chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000082.jsonl.gz
+2026-05-21 05:44:29,782 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000082.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000082.jsonl.gz
+2026-05-21 05:44:29,782 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000082.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000082.jsonl.gz
+2026-05-21 05:44:32,664 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000082.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000082.jsonl.gz
+  
+.....
+
+Average throughput: 101.0MiB/s
+2026-05-21 05:44:32,664 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000082.jsonl.gz
+2026-05-21 05:44:32,683 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000082.jsonl.gz
+2026-05-21 05:44:32,683 - INFO - Started new chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000083.jsonl.gz
+2026-05-21 05:44:49,581 - INFO - Exported raw data rows: 41,100,000
+2026-05-21 05:45:07,169 - INFO - Exported raw data rows: 41,200,000
+2026-05-21 05:45:25,041 - INFO - Exported raw data rows: 41,300,000
+2026-05-21 05:45:42,501 - INFO - Exported raw data rows: 41,400,000
+2026-05-21 05:45:48,044 - INFO - Finished final chunk: /home/buiphamhoaithanh/ETL/data/event/event_data_part000083.jsonl.gz
+2026-05-21 05:45:48,044 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/event/event_data_part000083.jsonl.gz -> gs://glamira-project-dataset/raw/event/event_data_part000083.jsonl.gz
+2026-05-21 05:45:48,044 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/event/event_data_part000083.jsonl.gz gs://glamira-project-dataset/raw/event/event_data_part000083.jsonl.gz
+2026-05-21 05:45:50,770 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/event/event_data_part000083.jsonl.gz to gs://glamira-project-dataset/raw/event/event_data_part000083.jsonl.gz
+  
+....
+
+Average throughput: 110.2MiB/s
+2026-05-21 05:45:50,770 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/event/event_data_part000083.jsonl.gz
+2026-05-21 05:45:50,787 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/event/event_data_part000083.jsonl.gz
+2026-05-21 05:45:50,789 - INFO - ========== EXPORT RAW DATA DONE ==========
+2026-05-21 05:45:50,789 - INFO - Total raw data rows exported: 41,432,473
+2026-05-21 05:45:50,789 - INFO - Total chunks created: 83
+2026-05-21 05:45:50,789 - INFO - ========== EXPORT IP2LOCATION START ==========
+2026-05-21 05:45:50,789 - INFO - Compressing JSONL: /home/buiphamhoaithanh/ip_pipeline/ip_location.jsonl -> /home/buiphamhoaithanh/ETL/data/ip_location/ip_location.jsonl.gz
+2026-05-21 05:46:43,581 - INFO - Compressed file completed: /home/buiphamhoaithanh/ETL/data/ip_location/ip_location.jsonl.gz
+2026-05-21 05:46:43,581 - INFO - Valid rows: 3,239,627, bad rows: 0
+2026-05-21 05:46:43,581 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/ip_location/ip_location.jsonl.gz -> gs://glamira-project-dataset/raw/ip_location/ip_location.jsonl.gz
+2026-05-21 05:46:43,581 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/ip_location/ip_location.jsonl.gz gs://glamira-project-dataset/raw/ip_location/ip_location.jsonl.gz
+2026-05-21 05:46:45,797 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/ip_location/ip_location.jsonl.gz to gs://glamira-project-dataset/raw/ip_location/ip_location.jsonl.gz
+  
+..
+
+Average throughput: 83.7MiB/s
+2026-05-21 05:46:45,798 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/ip_location/ip_location.jsonl.gz
+2026-05-21 05:46:45,802 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/ip_location/ip_location.jsonl.gz
+2026-05-21 05:46:45,802 - INFO - ========== EXPORT IP2LOCATION DONE ==========
+2026-05-21 05:46:45,802 - INFO - Total IP rows exported: 3,239,627
+2026-05-21 05:46:45,802 - INFO - ========== EXPORT PRODUCT START ==========
+2026-05-21 05:46:45,802 - INFO - Compressing JSONL: /home/buiphamhoaithanh/crawl_output/product_id_success.jsonl -> /home/buiphamhoaithanh/ETL/data/products/product_id_success.jsonl.gz
+2026-05-21 05:46:46,481 - INFO - Compressed file completed: /home/buiphamhoaithanh/ETL/data/products/product_id_success.jsonl.gz
+2026-05-21 05:46:46,481 - INFO - Valid rows: 18,969, bad rows: 0
+2026-05-21 05:46:46,481 - INFO - Uploading /home/buiphamhoaithanh/ETL/data/products/product_id_success.jsonl.gz -> gs://glamira-project-dataset/raw/product/product_id_success.jsonl.gz
+2026-05-21 05:46:46,481 - INFO - Running command: gcloud storage cp /home/buiphamhoaithanh/ETL/data/products/product_id_success.jsonl.gz gs://glamira-project-dataset/raw/product/product_id_success.jsonl.gz
+2026-05-21 05:46:48,390 - INFO - STDERR: Copying file:///home/buiphamhoaithanh/ETL/data/products/product_id_success.jsonl.gz to gs://glamira-project-dataset/raw/product/product_id_success.jsonl.gz
+  
+.
+2026-05-21 05:46:48,390 - INFO - Uploaded successfully: gs://glamira-project-dataset/raw/product/product_id_success.jsonl.gz
+2026-05-21 05:46:48,391 - INFO - Deleted local file after upload: /home/buiphamhoaithanh/ETL/data/products/product_id_success.jsonl.gz
+2026-05-21 05:46:48,391 - INFO - ========== EXPORT PRODUCT DONE ==========
+2026-05-21 05:46:48,391 - INFO - Total product rows exported: 18,969
+2026-05-21 05:46:48,391 - INFO - ############################################
+2026-05-21 05:46:48,391 - INFO - ETL EXPORT TO GCS COMPLETED SUCCESSFULLY
+2026-05-21 05:46:48,391 - INFO - ############################################
