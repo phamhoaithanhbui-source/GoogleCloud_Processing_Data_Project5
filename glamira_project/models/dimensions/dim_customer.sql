@@ -3,64 +3,23 @@
 WITH raw_customer AS (
     SELECT
         CAST(user_id_db AS STRING) AS customer_id
-        , LOWER(TRIM(COALESCE(email_address, 'UNKNOWN'))) AS email_address
-        , TIMESTAMP_SECONDS(time_stamp) AS event_timestamp
+        , LOWER(TRIM(ANY_VALUE(email_address))) AS email_address
+        , MIN(TIMESTAMP_SECONDS(time_stamp)) AS first_seen_at
+        , MAX(TIMESTAMP_SECONDS(time_stamp)) AS last_seen_at
     FROM `project-6978f7f5-636f-40bd-83c.glamira_dataset_raw.raw_event`
     WHERE user_id_db IS NOT NULL
-),
-
-customer_email_history AS (
-    SELECT
-        customer_id
-        , email_address
-        , MIN(event_timestamp) AS valid_from
-    FROM raw_customer
-    GROUP BY
-        customer_id
-        , email_address
-),
-
-scd_customer AS (
-    SELECT
-        customer_id
-        , email_address
-        , valid_from
-        , LEAD(valid_from) OVER (
-            PARTITION BY customer_id
-            ORDER BY valid_from
-        ) AS next_valid_from
-    FROM customer_email_history
+    GROUP BY user_id_db
 )
 
 SELECT
-    ABS(
-        FARM_FINGERPRINT(
-            CONCAT(
-                customer_id
-                , '|'
-                , email_address
-                , '|'
-                , CAST(valid_from AS STRING)
-            )
-        )
-    ) AS customer_key
-
+    ROW_NUMBER() OVER (ORDER BY customer_id) AS customer_key
     , customer_id
     , email_address
-
-    , valid_from
-    , COALESCE(
-        TIMESTAMP_SUB(next_valid_from, INTERVAL 1 SECOND),
-        TIMESTAMP('3000-01-01 00:00:00 UTC')
-    ) AS valid_to
-
-    , CASE
-        WHEN next_valid_from IS NULL THEN TRUE
-        ELSE FALSE
-    END AS is_current
-
+    , first_seen_at AS valid_from
+    , TIMESTAMP('3000-01-01 00:00:00 UTC') AS valid_to
+    , TRUE AS is_current
     , CURRENT_TIMESTAMP() AS created_at
     , CURRENT_TIMESTAMP() AS updated_at
     , 'raw_event' AS record_source
+FROM raw_customer
 
-FROM scd_customer

@@ -103,8 +103,7 @@ joined_fact AS (
  
     LEFT JOIN {{ ref('dim_customer') }} AS customer
     ON order_detail.customer_id = customer.customer_id
-    AND order_detail.order_datetime_utc >= customer.valid_from
-    AND order_detail.order_datetime_utc < customer.valid_to
+    AND customer.is_current = TRUE
 
 
     LEFT JOIN {{ ref('dim_product') }} AS product
