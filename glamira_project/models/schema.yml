@@ -1,0 +1,157 @@
+version: 2
+
+models:
+
+  # =====================
+  # DIM CUSTOMER
+  # =====================
+  - name: dim_customer
+    description: Customer dimension table.
+
+    columns:
+      - name: customer_key
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        tests:
+          - not_null
+
+  # =====================
+  # DIM PRODUCT
+  # =====================
+  - name: dim_product
+    description: Product dimension table.
+
+    columns:
+      - name: product_key
+        tests:
+          - unique
+          - not_null
+
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+
+  # =====================
+  # DIM DATE
+  # =====================
+  - name: dim_date
+    description: Date dimension table.
+
+    columns:
+      - name: date_key
+        tests:
+          - unique
+          - not_null
+
+      - name: full_date
+        tests:
+          - unique
+          - not_null
+
+  # =====================
+  # DIM LOCATION
+  # =====================
+  - name: dim_location
+    description: Location dimension table.
+
+    columns:
+      - name: location_key
+        tests:
+          - unique
+          - not_null
+
+    
+  # =====================
+  # DIM DEVICE
+  # =====================
+  - name: dim_device
+    description: Device dimension table.
+
+    columns:
+      - name: device_key
+        tests:
+          - unique
+          - not_null
+
+      - name: device_id
+        tests:
+          - not_null
+
+  # =====================
+  # DIM STORE
+  # =====================
+  - name: dim_store
+    description: Store dimension table.
+
+    columns:
+      - name: store_key
+        tests:
+          - unique
+          - not_null
+
+      - name: store_id
+        tests:
+          - unique
+          - not_null
+
+  # =====================
+  # FACT SALES ORDER DETAIL
+  # =====================
+  - name: fact_sales_order_detail
+    description: Fact table containing successful checkout product-level transactions.
+
+    columns:
+      - name: sales_order_detail_key
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_key
+        tests:
+          - relationships:
+              to: ref('dim_customer')
+              field: customer_key
+
+      - name: product_key
+        tests:
+          - relationships:
+              to: ref('dim_product')
+              field: product_key
+
+      - name: date_key
+        tests:
+          - relationships:
+              to: ref('dim_date')
+              field: date_key
+
+      - name: location_key
+        tests:
+          - relationships:
+              to: ref('dim_location')
+              field: location_key
+
+      - name: device_key
+        tests:
+          - relationships:
+              to: ref('dim_device')
+              field: device_key
+
+      - name: store_key
+        tests:
+          - relationships:
+              to: ref('dim_store')
+              field: store_key
+
+      - name: order_id
+        tests:
+          - not_null
+
+      - name: event_id
+        tests:
+          - not_null
+
+      
