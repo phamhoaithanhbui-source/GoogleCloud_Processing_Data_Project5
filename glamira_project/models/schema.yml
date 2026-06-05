@@ -6,8 +6,7 @@ models:
   # DIM CUSTOMER
   # =====================
   - name: dim_customer
-    description: Customer dimension table.
-
+    description: Customer dimension table with SCD Type 2 history and PII policy tag on email_address.
     columns:
       - name: customer_key
         tests:
@@ -18,12 +17,28 @@ models:
         tests:
           - not_null
 
+      - name: email_address
+        description: Customer email address. Protected by BigQuery Policy Tag email_pii.
+
+      - name: valid_from
+        tests:
+          - not_null
+
+      - name: valid_to
+        tests:
+          - not_null
+
+      - name: is_current
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_in_set:
+              value_set: [true, false]
+
   # =====================
   # DIM PRODUCT
   # =====================
   - name: dim_product
     description: Product dimension table.
-
     columns:
       - name: product_key
         tests:
@@ -40,7 +55,6 @@ models:
   # =====================
   - name: dim_date
     description: Date dimension table.
-
     columns:
       - name: date_key
         tests:
@@ -52,25 +66,34 @@ models:
           - unique
           - not_null
 
+      - name: month_number
+        tests:
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 1
+              max_value: 12
+
+      - name: quarter_number
+        tests:
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 1
+              max_value: 4
+
   # =====================
   # DIM LOCATION
   # =====================
   - name: dim_location
     description: Location dimension table.
-
     columns:
       - name: location_key
         tests:
           - unique
           - not_null
 
-    
   # =====================
   # DIM DEVICE
   # =====================
   - name: dim_device
     description: Device dimension table.
-
     columns:
       - name: device_key
         tests:
@@ -79,6 +102,7 @@ models:
 
       - name: device_id
         tests:
+          - unique
           - not_null
 
   # =====================
@@ -86,7 +110,6 @@ models:
   # =====================
   - name: dim_store
     description: Store dimension table.
-
     columns:
       - name: store_key
         tests:
@@ -99,11 +122,61 @@ models:
           - not_null
 
   # =====================
+  # DIM CURRENCY
+  # =====================
+  - name: dim_currency
+    description: Currency dimension table.
+    columns:
+      - name: currency_key
+        tests:
+          - unique
+          - not_null
+
+      - name: currency_code
+        tests:
+          - unique
+          - not_null
+
+  # =====================
+  # FACT EXCHANGE RATE
+  # =====================
+  - name: fact_exchange_rate
+    description: Monthly exchange rate fact table. Grain is one row per currency per month.
+    tests:
+      - dbt_expectations.expect_compound_columns_to_be_unique:
+          column_list: ["currency_key", "date_key"]
+
+    columns:
+      - name: exchange_rate_key
+        tests:
+          - unique
+          - not_null
+
+      - name: currency_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_currency')
+              field: currency_key
+
+      - name: date_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_date')
+              field: date_key
+
+      - name: exchange_rate_to_usd
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
+
+  # =====================
   # FACT SALES ORDER DETAIL
   # =====================
   - name: fact_sales_order_detail
-    description: Fact table containing successful checkout product-level transactions.
-
+    description: Fact table containing successful checkout product-level transactions. Grain is one row per product item in a successful checkout order.
     columns:
       - name: sales_order_detail_key
         tests:
@@ -112,39 +185,52 @@ models:
 
       - name: customer_key
         tests:
+          - not_null
           - relationships:
               to: ref('dim_customer')
               field: customer_key
 
       - name: product_key
         tests:
+          - not_null
           - relationships:
               to: ref('dim_product')
               field: product_key
 
       - name: date_key
         tests:
+          - not_null
           - relationships:
               to: ref('dim_date')
               field: date_key
 
       - name: location_key
         tests:
+          - not_null
           - relationships:
               to: ref('dim_location')
               field: location_key
 
       - name: device_key
         tests:
+          - not_null
           - relationships:
               to: ref('dim_device')
               field: device_key
 
       - name: store_key
         tests:
+          - not_null
           - relationships:
               to: ref('dim_store')
               field: store_key
+
+      - name: currency_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_currency')
+              field: currency_key
 
       - name: order_id
         tests:
@@ -154,4 +240,14 @@ models:
         tests:
           - not_null
 
-      
+      - name: order_qty
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
+
+      - name: sales_amount_usd
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value:  0 
