@@ -431,7 +431,9 @@ jo****@gmail.com
 
 Looker Studio was used to build business dashboards.
 
-<img width="1012" height="696" alt="image" src="https://github.com/user-attachments/assets/8bcefbfa-69be-47b4-9fe0-6dc81690eeb9" />
+
+<img width="1002" height="747" alt="image" src="https://github.com/user-attachments/assets/3f5f15c8-a4cf-4751-9427-9ea2504bd47e" />
+
 
 
 
